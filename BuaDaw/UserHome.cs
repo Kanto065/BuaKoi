@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BuaDaw
 {
-    public partial class Home : Form
+    public partial class UserHome : Form
     {
-        public Home()
+        public UserHome()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
