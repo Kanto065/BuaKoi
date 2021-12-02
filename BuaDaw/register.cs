@@ -46,5 +46,20 @@ namespace BuaDaw
         {
 
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GetStarted_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FAQ_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

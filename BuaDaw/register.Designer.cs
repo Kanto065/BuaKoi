@@ -154,6 +154,7 @@ namespace BuaDaw
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(241, 31);
             this.textBox3.TabIndex = 18;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
@@ -275,6 +276,7 @@ namespace BuaDaw
             this.GetStarted.TabIndex = 29;
             this.GetStarted.Text = "Register";
             this.GetStarted.UseVisualStyleBackColor = false;
+            this.GetStarted.Click += new System.EventHandler(this.GetStarted_Click);
             // 
             // label8
             // 
@@ -325,6 +327,7 @@ namespace BuaDaw
             this.FAQ.TabIndex = 30;
             this.FAQ.TabStop = true;
             this.FAQ.Text = "FAQ\'s";
+            this.FAQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.FAQ_LinkClicked);
             // 
             // label9
             // 
