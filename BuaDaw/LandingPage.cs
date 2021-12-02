@@ -50,6 +50,7 @@ namespace BuaDaw
         private void GetStarted_Click(object sender, EventArgs e)
         {
             LogIn login = new LogIn();
+            this.Hide();
             login.Show();
         }
     }
