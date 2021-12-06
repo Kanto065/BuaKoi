@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
+using MySql.Data.MySqlClient;
 
 namespace BuaDaw
 {
@@ -53,10 +54,10 @@ namespace BuaDaw
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text) == true)
+            if (string.IsNullOrEmpty(fname.Text) == true)
             {
-                textBox1.Focus();
-                errorProvider1.SetError(this.textBox1, "Please enter first name");
+                fname.Focus();
+                errorProvider1.SetError(this.fname, "Please enter first name");
 
             }
             else
@@ -67,10 +68,10 @@ namespace BuaDaw
 
         private void textBox2_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text) == true)
+            if (string.IsNullOrEmpty(lname.Text) == true)
             {
-                textBox2.Focus();
-                errorProvider2.SetError(this.textBox2, "Please enter last name");
+                lname.Focus();
+                errorProvider2.SetError(this.lname, "Please enter last name");
 
             }
             else
@@ -81,10 +82,10 @@ namespace BuaDaw
 
         private void textBox3_Leave(object sender, EventArgs e)
         {
-            if (Regex.IsMatch(textBox3.Text.Trim(), pattern) == false)
+            if (Regex.IsMatch(email.Text.Trim(), pattern) == false)
             {
-                textBox3.Focus();
-                errorProvider3.SetError(this.textBox3, "Invalid email or empty");
+                email.Focus();
+                errorProvider3.SetError(this.email, "Invalid email or empty");
             }
             else
             {
@@ -94,11 +95,20 @@ namespace BuaDaw
 
         private void textBox4_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox4.Text) == true)
+            if (string.IsNullOrEmpty(phone.Text) == true)
+            {
+                phone.Focus();
+                errorProvider4.SetError(this.phone, "Please enter valid number");
+
+            }
+            else if (Regex.IsMatch(textBox4.Text.Trim(), pattern2) == false)
             {
                 textBox4.Focus();
-                errorProvider4.SetError(this.textBox4, "Please enter valid number");
-
+                errorProvider4.SetError(this.textBox4, "Invalid Phone number or empty");
+            }
+            else
+            {
+                errorProvider4.Clear();
             }
         }
     }
