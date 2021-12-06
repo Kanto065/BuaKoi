@@ -99,6 +99,7 @@ namespace BuaDaw
                 textBox4.Focus();
                 errorProvider4.SetError(this.textBox4, "Please enter valid number");
 
+            }
         }
     }
 }

@@ -74,7 +74,7 @@ namespace BuaDaw
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(113, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 29);
+            this.label2.Size = new System.Drawing.Size(83, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Register";
             // 
@@ -85,7 +85,7 @@ namespace BuaDaw
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(115, 187);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 18);
+            this.label3.Size = new System.Drawing.Size(65, 15);
             this.label3.TabIndex = 17;
             this.label3.Text = "Last name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -97,7 +97,7 @@ namespace BuaDaw
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(115, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 18);
+            this.label1.Size = new System.Drawing.Size(65, 15);
             this.label1.TabIndex = 16;
             this.label1.Text = "First name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -110,7 +110,7 @@ namespace BuaDaw
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(199, 468);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(158, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(132, 15);
             this.linkLabel1.TabIndex = 15;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Tearm\'s and condition.";
@@ -122,7 +122,7 @@ namespace BuaDaw
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(118, 467);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(103, 22);
+            this.checkBox1.Size = new System.Drawing.Size(87, 19);
             this.checkBox1.TabIndex = 14;
             this.checkBox1.Text = "I accept all ";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@ namespace BuaDaw
             // 
             this.textBox2.Location = new System.Drawing.Point(119, 210);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 30);
+            this.textBox2.Size = new System.Drawing.Size(241, 26);
             this.textBox2.TabIndex = 13;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
@@ -141,7 +141,7 @@ namespace BuaDaw
             // 
             this.textBox1.Location = new System.Drawing.Point(119, 153);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 30);
+            this.textBox1.Size = new System.Drawing.Size(241, 26);
             this.textBox1.TabIndex = 12;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
@@ -153,7 +153,7 @@ namespace BuaDaw
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(115, 244);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 18);
+            this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 19;
             this.label4.Text = "Email";
             // 
@@ -161,7 +161,7 @@ namespace BuaDaw
             // 
             this.textBox3.Location = new System.Drawing.Point(119, 267);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 30);
+            this.textBox3.Size = new System.Drawing.Size(241, 26);
             this.textBox3.TabIndex = 18;
             // 
             // label5
@@ -171,7 +171,7 @@ namespace BuaDaw
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(115, 301);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 18);
+            this.label5.Size = new System.Drawing.Size(74, 15);
             this.label5.TabIndex = 20;
             this.label5.Text = "Date of Birth";
             // 
@@ -180,7 +180,7 @@ namespace BuaDaw
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(119, 326);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(241, 26);
             this.dateTimePicker1.TabIndex = 21;
             // 
             // label6
@@ -190,7 +190,7 @@ namespace BuaDaw
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(115, 360);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 18);
+            this.label6.Size = new System.Drawing.Size(48, 15);
             this.label6.TabIndex = 22;
             this.label6.Text = "Gender";
             // 
@@ -200,7 +200,7 @@ namespace BuaDaw
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(119, 376);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 28);
+            this.radioButton1.Size = new System.Drawing.Size(58, 22);
             this.radioButton1.TabIndex = 23;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
@@ -212,7 +212,7 @@ namespace BuaDaw
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(191, 376);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(95, 28);
+            this.radioButton2.Size = new System.Drawing.Size(75, 22);
             this.radioButton2.TabIndex = 24;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
@@ -224,7 +224,7 @@ namespace BuaDaw
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(282, 376);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(78, 28);
+            this.radioButton3.Size = new System.Drawing.Size(63, 22);
             this.radioButton3.TabIndex = 25;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Other";
@@ -248,7 +248,7 @@ namespace BuaDaw
             this.linkLabel2.LinkColor = System.Drawing.Color.Black;
             this.linkLabel2.Location = new System.Drawing.Point(114, 45);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(62, 20);
+            this.linkLabel2.Size = new System.Drawing.Size(51, 17);
             this.linkLabel2.TabIndex = 26;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "< Back";
@@ -260,7 +260,7 @@ namespace BuaDaw
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(115, 409);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 18);
+            this.label7.Size = new System.Drawing.Size(91, 15);
             this.label7.TabIndex = 27;
             this.label7.Text = "Phone Number";
             // 
@@ -268,7 +268,7 @@ namespace BuaDaw
             // 
             this.textBox4.Location = new System.Drawing.Point(118, 430);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(241, 30);
+            this.textBox4.Size = new System.Drawing.Size(241, 26);
             this.textBox4.TabIndex = 28;
             this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
@@ -284,7 +284,6 @@ namespace BuaDaw
             this.GetStarted.TabIndex = 29;
             this.GetStarted.Text = "Register";
             this.GetStarted.UseVisualStyleBackColor = false;
-            this.GetStarted.Click += new System.EventHandler(this.GetStarted_Click);
             // 
             // label8
             // 
@@ -293,7 +292,7 @@ namespace BuaDaw
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(43, 610);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 18);
+            this.label8.Size = new System.Drawing.Size(153, 15);
             this.label8.TabIndex = 33;
             this.label8.Text = "©️ All rights reserved - 2021";
             // 
@@ -305,7 +304,7 @@ namespace BuaDaw
             this.linkLabel3.LinkColor = System.Drawing.Color.Black;
             this.linkLabel3.Location = new System.Drawing.Point(261, 585);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(136, 20);
+            this.linkLabel3.Size = new System.Drawing.Size(118, 17);
             this.linkLabel3.TabIndex = 32;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "about developers";
@@ -318,7 +317,7 @@ namespace BuaDaw
             this.TAC.LinkColor = System.Drawing.Color.Black;
             this.TAC.Location = new System.Drawing.Point(96, 585);
             this.TAC.Name = "TAC";
-            this.TAC.Size = new System.Drawing.Size(165, 20);
+            this.TAC.Size = new System.Drawing.Size(139, 17);
             this.TAC.TabIndex = 31;
             this.TAC.TabStop = true;
             this.TAC.Text = "terms and conditions";
@@ -331,11 +330,10 @@ namespace BuaDaw
             this.FAQ.LinkColor = System.Drawing.Color.Black;
             this.FAQ.Location = new System.Drawing.Point(42, 585);
             this.FAQ.Name = "FAQ";
-            this.FAQ.Size = new System.Drawing.Size(56, 20);
+            this.FAQ.Size = new System.Drawing.Size(46, 17);
             this.FAQ.TabIndex = 30;
             this.FAQ.TabStop = true;
             this.FAQ.Text = "FAQ\'s";
-            this.FAQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.FAQ_LinkClicked);
             // 
             // label9
             // 
@@ -344,7 +342,7 @@ namespace BuaDaw
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(280, 45);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 20);
+            this.label9.Size = new System.Drawing.Size(75, 17);
             this.label9.TabIndex = 34;
             this.label9.Text = "step 1 of 3";
             // 
@@ -366,7 +364,7 @@ namespace BuaDaw
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);

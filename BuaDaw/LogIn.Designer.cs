@@ -59,7 +59,7 @@ namespace BuaDaw
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(113, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 29);
+            this.label2.Size = new System.Drawing.Size(65, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Log in";
             // 
@@ -71,7 +71,7 @@ namespace BuaDaw
             this.FAQ.LinkColor = System.Drawing.Color.Black;
             this.FAQ.Location = new System.Drawing.Point(266, 111);
             this.FAQ.Name = "FAQ";
-            this.FAQ.Size = new System.Drawing.Size(107, 29);
+            this.FAQ.Size = new System.Drawing.Size(83, 25);
             this.FAQ.TabIndex = 4;
             this.FAQ.TabStop = true;
             this.FAQ.Text = "Register";
@@ -81,7 +81,7 @@ namespace BuaDaw
             // 
             this.email.Location = new System.Drawing.Point(119, 188);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(241, 30);
+            this.email.Size = new System.Drawing.Size(241, 26);
             this.email.TabIndex = 5;
             this.email.Leave += new System.EventHandler(this.email_Leave);
             // 
@@ -90,7 +90,7 @@ namespace BuaDaw
             this.password.Location = new System.Drawing.Point(119, 245);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(241, 30);
+            this.password.Size = new System.Drawing.Size(241, 26);
             this.password.TabIndex = 6;
             this.password.Leave += new System.EventHandler(this.password_Leave);
             // 
@@ -100,7 +100,7 @@ namespace BuaDaw
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(119, 278);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(103, 22);
+            this.checkBox1.Size = new System.Drawing.Size(87, 19);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "I accept all ";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@ namespace BuaDaw
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(200, 279);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(158, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(132, 15);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Tearm\'s and condition.";
@@ -138,7 +138,7 @@ namespace BuaDaw
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(115, 163);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 18);
+            this.label1.Size = new System.Drawing.Size(142, 15);
             this.label1.TabIndex = 10;
             this.label1.Text = "enter your email address";
             // 
@@ -149,7 +149,7 @@ namespace BuaDaw
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(115, 220);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 18);
+            this.label3.Size = new System.Drawing.Size(117, 15);
             this.label3.TabIndex = 11;
             this.label3.Text = "enter your password";
             // 
@@ -172,7 +172,7 @@ namespace BuaDaw
             this.linkLabel2.LinkColor = System.Drawing.Color.Black;
             this.linkLabel2.Location = new System.Drawing.Point(114, 74);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(62, 20);
+            this.linkLabel2.Size = new System.Drawing.Size(51, 17);
             this.linkLabel2.TabIndex = 12;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "< Back";
@@ -184,7 +184,7 @@ namespace BuaDaw
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(43, 608);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 18);
+            this.label4.Size = new System.Drawing.Size(153, 15);
             this.label4.TabIndex = 16;
             this.label4.Text = "©️ All rights reserved - 2021";
             // 
@@ -196,7 +196,7 @@ namespace BuaDaw
             this.linkLabel3.LinkColor = System.Drawing.Color.Black;
             this.linkLabel3.Location = new System.Drawing.Point(261, 583);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(136, 20);
+            this.linkLabel3.Size = new System.Drawing.Size(118, 17);
             this.linkLabel3.TabIndex = 15;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "about developers";
@@ -209,7 +209,7 @@ namespace BuaDaw
             this.TAC.LinkColor = System.Drawing.Color.Black;
             this.TAC.Location = new System.Drawing.Point(96, 583);
             this.TAC.Name = "TAC";
-            this.TAC.Size = new System.Drawing.Size(165, 20);
+            this.TAC.Size = new System.Drawing.Size(139, 17);
             this.TAC.TabIndex = 14;
             this.TAC.TabStop = true;
             this.TAC.Text = "terms and conditions";
@@ -222,7 +222,7 @@ namespace BuaDaw
             this.linkLabel4.LinkColor = System.Drawing.Color.Black;
             this.linkLabel4.Location = new System.Drawing.Point(42, 583);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(56, 20);
+            this.linkLabel4.Size = new System.Drawing.Size(46, 17);
             this.linkLabel4.TabIndex = 13;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "FAQ\'s";
@@ -237,7 +237,7 @@ namespace BuaDaw
             // 
             // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
