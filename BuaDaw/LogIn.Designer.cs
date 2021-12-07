@@ -1,4 +1,4 @@
-﻿
+
 namespace BuaDaw
 {
     partial class LogIn
@@ -83,6 +83,7 @@ namespace BuaDaw
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(241, 26);
             this.email.TabIndex = 5;
+            this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
             this.email.Leave += new System.EventHandler(this.email_Leave);
             // 
             // password
@@ -130,6 +131,7 @@ namespace BuaDaw
             this.GetStarted.TabIndex = 9;
             this.GetStarted.Text = "Log in";
             this.GetStarted.UseVisualStyleBackColor = false;
+            this.GetStarted.Click += new System.EventHandler(this.GetStarted_Click);
             // 
             // label1
             // 
@@ -261,6 +263,7 @@ namespace BuaDaw
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
+            this.Load += new System.EventHandler(this.LogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
