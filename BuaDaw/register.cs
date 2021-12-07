@@ -101,15 +101,85 @@ namespace BuaDaw
                 errorProvider4.SetError(this.phone, "Please enter valid number");
 
             }
-            else if (Regex.IsMatch(textBox4.Text.Trim(), pattern2) == false)
+            else if (Regex.IsMatch(phone.Text.Trim(), pattern2) == false)
             {
-                textBox4.Focus();
-                errorProvider4.SetError(this.textBox4, "Invalid Phone number or empty");
+                phone.Focus();
+                errorProvider4.SetError(this.phone, "Invalid Phone number or empty");
             }
             else
             {
                 errorProvider4.Clear();
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GetStarted_Click(object sender, EventArgs e)
+        {
+            // CREATE BUTTON
+            MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
+            MySqlCommand command;
+            MySqlDataReader mdr;
+
+            connection.Open();
+            string selectQuery = "SELECT * FROM buakoi.userinfo WHERE Email = '" + email.Text + "';";
+            command = new MySqlCommand(selectQuery, connection);
+            mdr = command.ExecuteReader();
+            if (mdr.Read())
+            {
+                MessageBox.Show("The email has already been registered");
+
+            }
+            else
+            {
+
+                string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=buakoi;";
+                string iquery = "INSERT INTO userinfo(`Email`,`Password`,`FirstName`,`LastName`,`DoB`,`Gender`,`PhoneNumber`) VALUES ('" + email.Text + "','" + password.Text + "', '" + fname.Text + "', '" + lname.Text + "', '" + datetime.Text + "', '" + gender.Text + "', '" + phone.Text + "')";
+
+                MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+                MySqlCommand commandDatabase = new MySqlCommand(iquery, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlDataReader myReader = commandDatabase.ExecuteReader();
+                    databaseConnection.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Show any error message.
+                    MessageBox.Show(ex.Message);
+                }
+
+                MessageBox.Show("Account Successfully Created!");
+            }
+
+            connection.Close();
+
+            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(password.Text))
+            {
+                MessageBox.Show("Please input Username and Password", "Error");
+            }
+            //lastline
+        }
+
+        private void phone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

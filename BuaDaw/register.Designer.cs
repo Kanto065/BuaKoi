@@ -1,4 +1,4 @@
-﻿
+
 namespace BuaDaw
 {
     partial class Register
@@ -35,21 +35,21 @@ namespace BuaDaw
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.accept = new System.Windows.Forms.CheckBox();
+            this.lname = new System.Windows.Forms.TextBox();
+            this.fname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.datetime = new System.Windows.Forms.DateTimePicker();
+            this.gender = new System.Windows.Forms.Label();
+            this.male = new System.Windows.Forms.RadioButton();
+            this.female = new System.Windows.Forms.RadioButton();
+            this.other = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.phone = new System.Windows.Forms.TextBox();
             this.GetStarted = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
@@ -60,6 +60,8 @@ namespace BuaDaw
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.password = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -116,35 +118,35 @@ namespace BuaDaw
             this.linkLabel1.Text = "Tearm\'s and condition.";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // checkBox1
+            // accept
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(118, 467);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(87, 19);
-            this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "I accept all ";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.accept.AutoSize = true;
+            this.accept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accept.Location = new System.Drawing.Point(118, 467);
+            this.accept.Name = "accept";
+            this.accept.Size = new System.Drawing.Size(87, 19);
+            this.accept.TabIndex = 14;
+            this.accept.Text = "I accept all ";
+            this.accept.UseVisualStyleBackColor = true;
+            this.accept.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // textBox2
+            // lname
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 210);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 26);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            this.lname.Location = new System.Drawing.Point(119, 210);
+            this.lname.Name = "lname";
+            this.lname.Size = new System.Drawing.Size(241, 26);
+            this.lname.TabIndex = 13;
+            this.lname.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.lname.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
-            // textBox1
+            // fname
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 26);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.fname.Location = new System.Drawing.Point(119, 153);
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(241, 26);
+            this.fname.TabIndex = 12;
+            this.fname.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.fname.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // label4
             // 
@@ -157,12 +159,14 @@ namespace BuaDaw
             this.label4.TabIndex = 19;
             this.label4.Text = "Email";
             // 
-            // textBox3
+            // email
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 267);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 26);
-            this.textBox3.TabIndex = 18;
+            this.email.Location = new System.Drawing.Point(119, 267);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(241, 26);
+            this.email.TabIndex = 18;
+            this.email.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.email.Leave += new System.EventHandler(this.textBox3_Leave);
             // 
             // label5
             // 
@@ -175,60 +179,60 @@ namespace BuaDaw
             this.label5.TabIndex = 20;
             this.label5.Text = "Date of Birth";
             // 
-            // dateTimePicker1
+            // datetime
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(119, 326);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 26);
-            this.dateTimePicker1.TabIndex = 21;
+            this.datetime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datetime.Location = new System.Drawing.Point(119, 326);
+            this.datetime.Name = "datetime";
+            this.datetime.Size = new System.Drawing.Size(241, 26);
+            this.datetime.TabIndex = 21;
             // 
-            // label6
+            // gender
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(115, 360);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 15);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Gender";
+            this.gender.AutoSize = true;
+            this.gender.BackColor = System.Drawing.Color.Transparent;
+            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.Location = new System.Drawing.Point(115, 360);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(48, 15);
+            this.gender.TabIndex = 22;
+            this.gender.Text = "Gender";
             // 
-            // radioButton1
+            // male
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(119, 376);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 22);
-            this.radioButton1.TabIndex = 23;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.male.AutoSize = true;
+            this.male.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.male.Location = new System.Drawing.Point(119, 376);
+            this.male.Name = "male";
+            this.male.Size = new System.Drawing.Size(58, 22);
+            this.male.TabIndex = 23;
+            this.male.TabStop = true;
+            this.male.Text = "Male";
+            this.male.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // female
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(191, 376);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 22);
-            this.radioButton2.TabIndex = 24;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.female.AutoSize = true;
+            this.female.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.female.Location = new System.Drawing.Point(191, 376);
+            this.female.Name = "female";
+            this.female.Size = new System.Drawing.Size(75, 22);
+            this.female.TabIndex = 24;
+            this.female.TabStop = true;
+            this.female.Text = "Female";
+            this.female.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // other
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(282, 376);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(63, 22);
-            this.radioButton3.TabIndex = 25;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Other";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.other.AutoSize = true;
+            this.other.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other.Location = new System.Drawing.Point(282, 376);
+            this.other.Name = "other";
+            this.other.Size = new System.Drawing.Size(63, 22);
+            this.other.TabIndex = 25;
+            this.other.TabStop = true;
+            this.other.Text = "Other";
+            this.other.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -264,13 +268,14 @@ namespace BuaDaw
             this.label7.TabIndex = 27;
             this.label7.Text = "Phone Number";
             // 
-            // textBox4
+            // phone
             // 
-            this.textBox4.Location = new System.Drawing.Point(118, 430);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(241, 26);
-            this.textBox4.TabIndex = 28;
-            this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
+            this.phone.Location = new System.Drawing.Point(118, 430);
+            this.phone.Name = "phone";
+            this.phone.Size = new System.Drawing.Size(241, 26);
+            this.phone.TabIndex = 28;
+            this.phone.TextChanged += new System.EventHandler(this.phone_TextChanged);
+            this.phone.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
             // GetStarted
             // 
@@ -284,6 +289,7 @@ namespace BuaDaw
             this.GetStarted.TabIndex = 29;
             this.GetStarted.Text = "Register";
             this.GetStarted.UseVisualStyleBackColor = false;
+            this.GetStarted.Click += new System.EventHandler(this.GetStarted_Click);
             // 
             // label8
             // 
@@ -362,35 +368,54 @@ namespace BuaDaw
             // 
             this.errorProvider4.ContainerControl = this;
             // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(215, 107);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(144, 26);
+            this.password.TabIndex = 35;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(215, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 20);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "Password";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.password);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.TAC);
             this.Controls.Add(this.FAQ);
             this.Controls.Add(this.GetStarted);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.phone);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.other);
+            this.Controls.Add(this.female);
+            this.Controls.Add(this.male);
+            this.Controls.Add(this.gender);
+            this.Controls.Add(this.datetime);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.email);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.accept);
+            this.Controls.Add(this.lname);
+            this.Controls.Add(this.fname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -398,6 +423,7 @@ namespace BuaDaw
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resister form";
+            this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
@@ -415,20 +441,20 @@ namespace BuaDaw
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox accept;
+        private System.Windows.Forms.TextBox lname;
+        private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.DateTimePicker datetime;
+        private System.Windows.Forms.Label gender;
+        private System.Windows.Forms.RadioButton male;
+        private System.Windows.Forms.RadioButton female;
+        private System.Windows.Forms.RadioButton other;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox phone;
         private System.Windows.Forms.Button GetStarted;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.LinkLabel linkLabel3;
@@ -439,5 +465,7 @@ namespace BuaDaw
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.ErrorProvider errorProvider4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox password;
     }
 }
