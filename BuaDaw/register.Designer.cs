@@ -62,7 +62,7 @@ namespace BuaDaw
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -390,12 +390,12 @@ namespace BuaDaw
             this.textBox1.Size = new System.Drawing.Size(213, 26);
             this.textBox1.TabIndex = 38;
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 386);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 26);
-            this.textBox2.TabIndex = 40;
+            this.password.Location = new System.Drawing.Point(100, 386);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(213, 26);
+            this.password.TabIndex = 40;
             // 
             // label11
             // 
@@ -434,7 +434,7 @@ namespace BuaDaw
             this.ClientSize = new System.Drawing.Size(1014, 641);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.password);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label10);
@@ -512,7 +512,7 @@ namespace BuaDaw
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
