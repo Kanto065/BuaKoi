@@ -41,8 +41,6 @@ namespace BuaDaw
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.datetime = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.phone = new System.Windows.Forms.TextBox();
@@ -63,31 +61,30 @@ namespace BuaDaw
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTab = new System.Windows.Forms.TabPage();
             this.UpdateTab = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label20 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.DeleteTab = new System.Windows.Forms.TabPage();
             this.SearchTab = new System.Windows.Forms.TabPage();
             this.UpdateInfoButton = new System.Windows.Forms.Button();
             this.ViewUserInfo = new System.Windows.Forms.Button();
             this.AdminLogOutButton = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label18 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.AddTab.SuspendLayout();
@@ -99,9 +96,9 @@ namespace BuaDaw
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(495, 73);
+            this.dataGridView1.Location = new System.Drawing.Point(495, 103);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(777, 455);
+            this.dataGridView1.Size = new System.Drawing.Size(777, 425);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -132,7 +129,7 @@ namespace BuaDaw
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 84);
+            this.label3.Location = new System.Drawing.Point(223, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 23);
             this.label3.TabIndex = 15;
@@ -145,13 +142,13 @@ namespace BuaDaw
             this.label4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 23);
+            this.label4.Size = new System.Drawing.Size(104, 23);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Maid first name";
+            this.label4.Text = "Maid full name";
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(12, 110);
+            this.password.Location = new System.Drawing.Point(227, 41);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(184, 31);
@@ -170,7 +167,7 @@ namespace BuaDaw
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(8, 155);
+            this.label5.Location = new System.Drawing.Point(223, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 23);
             this.label5.TabIndex = 19;
@@ -181,7 +178,7 @@ namespace BuaDaw
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(223, 84);
+            this.label6.Location = new System.Drawing.Point(6, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 23);
             this.label6.TabIndex = 18;
@@ -189,7 +186,7 @@ namespace BuaDaw
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(11, 182);
+            this.textBox1.Location = new System.Drawing.Point(226, 115);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(185, 31);
@@ -198,28 +195,10 @@ namespace BuaDaw
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(228, 110);
+            this.textBox2.Location = new System.Drawing.Point(11, 114);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(184, 31);
             this.textBox2.TabIndex = 16;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(223, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 23);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Maid last name";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(228, 41);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 31);
-            this.textBox3.TabIndex = 24;
             // 
             // datetime
             // 
@@ -262,7 +241,7 @@ namespace BuaDaw
             // 
             this.other.AutoSize = true;
             this.other.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.other.Location = new System.Drawing.Point(156, 317);
+            this.other.Location = new System.Drawing.Point(373, 252);
             this.other.Name = "other";
             this.other.Size = new System.Drawing.Size(63, 22);
             this.other.TabIndex = 32;
@@ -274,7 +253,7 @@ namespace BuaDaw
             // 
             this.female.AutoSize = true;
             this.female.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.female.Location = new System.Drawing.Point(75, 317);
+            this.female.Location = new System.Drawing.Point(292, 252);
             this.female.Name = "female";
             this.female.Size = new System.Drawing.Size(75, 22);
             this.female.TabIndex = 31;
@@ -286,7 +265,7 @@ namespace BuaDaw
             // 
             this.male.AutoSize = true;
             this.male.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.male.Location = new System.Drawing.Point(11, 317);
+            this.male.Location = new System.Drawing.Point(228, 252);
             this.male.Name = "male";
             this.male.Size = new System.Drawing.Size(58, 22);
             this.male.TabIndex = 30;
@@ -299,7 +278,7 @@ namespace BuaDaw
             this.gender.AutoSize = true;
             this.gender.BackColor = System.Drawing.Color.Transparent;
             this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.Location = new System.Drawing.Point(9, 294);
+            this.gender.Location = new System.Drawing.Point(226, 229);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(53, 16);
             this.gender.TabIndex = 29;
@@ -307,7 +286,7 @@ namespace BuaDaw
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(228, 248);
+            this.textBox4.Location = new System.Drawing.Point(13, 181);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(184, 31);
             this.textBox4.TabIndex = 36;
@@ -317,7 +296,7 @@ namespace BuaDaw
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(223, 222);
+            this.label12.Location = new System.Drawing.Point(8, 155);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(121, 23);
             this.label12.TabIndex = 35;
@@ -329,7 +308,7 @@ namespace BuaDaw
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(11, 359);
+            this.button3.Location = new System.Drawing.Point(11, 309);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 46);
             this.button3.TabIndex = 38;
@@ -355,7 +334,7 @@ namespace BuaDaw
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(11, 360);
+            this.button4.Location = new System.Drawing.Point(11, 303);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 46);
             this.button4.TabIndex = 40;
@@ -434,9 +413,7 @@ namespace BuaDaw
             this.AddTab.Controls.Add(this.button3);
             this.AddTab.Controls.Add(this.label5);
             this.AddTab.Controls.Add(this.textBox4);
-            this.AddTab.Controls.Add(this.textBox3);
             this.AddTab.Controls.Add(this.label12);
-            this.AddTab.Controls.Add(this.label9);
             this.AddTab.Controls.Add(this.phone);
             this.AddTab.Controls.Add(this.label10);
             this.AddTab.Controls.Add(this.label11);
@@ -456,23 +433,21 @@ namespace BuaDaw
             // 
             this.UpdateTab.BackColor = System.Drawing.Color.White;
             this.UpdateTab.Controls.Add(this.label8);
+            this.UpdateTab.Controls.Add(this.textBox3);
             this.UpdateTab.Controls.Add(this.textBox6);
+            this.UpdateTab.Controls.Add(this.label9);
             this.UpdateTab.Controls.Add(this.textBox7);
-            this.UpdateTab.Controls.Add(this.label13);
             this.UpdateTab.Controls.Add(this.textBox8);
-            this.UpdateTab.Controls.Add(this.textBox9);
+            this.UpdateTab.Controls.Add(this.label13);
             this.UpdateTab.Controls.Add(this.label14);
+            this.UpdateTab.Controls.Add(this.textBox9);
             this.UpdateTab.Controls.Add(this.label15);
             this.UpdateTab.Controls.Add(this.textBox10);
-            this.UpdateTab.Controls.Add(this.textBox11);
             this.UpdateTab.Controls.Add(this.label16);
             this.UpdateTab.Controls.Add(this.label17);
-            this.UpdateTab.Controls.Add(this.textBox12);
-            this.UpdateTab.Controls.Add(this.label18);
-            this.UpdateTab.Controls.Add(this.label19);
             this.UpdateTab.Controls.Add(this.dateTimePicker1);
             this.UpdateTab.Controls.Add(this.radioButton1);
-            this.UpdateTab.Controls.Add(this.label20);
+            this.UpdateTab.Controls.Add(this.label18);
             this.UpdateTab.Controls.Add(this.radioButton2);
             this.UpdateTab.Controls.Add(this.radioButton3);
             this.UpdateTab.Controls.Add(this.button4);
@@ -483,184 +458,221 @@ namespace BuaDaw
             this.UpdateTab.TabIndex = 1;
             this.UpdateTab.Text = "Update";
             // 
+            // DeleteTab
+            // 
+            this.DeleteTab.BackColor = System.Drawing.Color.White;
+            this.DeleteTab.Controls.Add(this.button2);
+            this.DeleteTab.Location = new System.Drawing.Point(4, 37);
+            this.DeleteTab.Name = "DeleteTab";
+            this.DeleteTab.Size = new System.Drawing.Size(466, 421);
+            this.DeleteTab.TabIndex = 2;
+            this.DeleteTab.Text = "Delete";
+            // 
+            // SearchTab
+            // 
+            this.SearchTab.BackColor = System.Drawing.Color.White;
+            this.SearchTab.Controls.Add(this.button5);
+            this.SearchTab.Location = new System.Drawing.Point(4, 37);
+            this.SearchTab.Name = "SearchTab";
+            this.SearchTab.Size = new System.Drawing.Size(466, 421);
+            this.SearchTab.TabIndex = 3;
+            this.SearchTab.Text = "Search";
+            // 
+            // UpdateInfoButton
+            // 
+            this.UpdateInfoButton.Location = new System.Drawing.Point(1080, 9);
+            this.UpdateInfoButton.Name = "UpdateInfoButton";
+            this.UpdateInfoButton.Size = new System.Drawing.Size(118, 41);
+            this.UpdateInfoButton.TabIndex = 46;
+            this.UpdateInfoButton.Text = "Update info";
+            this.UpdateInfoButton.UseVisualStyleBackColor = true;
+            this.UpdateInfoButton.Click += new System.EventHandler(this.UpdateInfoButton_Click);
+            // 
+            // ViewUserInfo
+            // 
+            this.ViewUserInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.ViewUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewUserInfo.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewUserInfo.ForeColor = System.Drawing.Color.White;
+            this.ViewUserInfo.Location = new System.Drawing.Point(495, 575);
+            this.ViewUserInfo.Name = "ViewUserInfo";
+            this.ViewUserInfo.Size = new System.Drawing.Size(195, 46);
+            this.ViewUserInfo.TabIndex = 47;
+            this.ViewUserInfo.Text = "View User List";
+            this.ViewUserInfo.UseVisualStyleBackColor = false;
+            this.ViewUserInfo.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // AdminLogOutButton
+            // 
+            this.AdminLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.BackgroundImage")));
+            this.AdminLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 9);
+            this.AdminLogOutButton.Name = "AdminLogOutButton";
+            this.AdminLogOutButton.Size = new System.Drawing.Size(46, 41);
+            this.AdminLogOutButton.TabIndex = 7;
+            this.AdminLogOutButton.UseVisualStyleBackColor = true;
+            this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 15);
+            this.label8.Location = new System.Drawing.Point(7, 15);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 23);
+            this.label8.Size = new System.Drawing.Size(104, 23);
             this.label8.TabIndex = 43;
-            this.label8.Text = "Maid first name";
+            this.label8.Text = "Maid full name";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(12, 41);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(185, 31);
+            this.textBox3.TabIndex = 41;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(11, 41);
+            this.textBox6.Location = new System.Drawing.Point(228, 41);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(185, 31);
-            this.textBox6.TabIndex = 41;
+            this.textBox6.PasswordChar = '*';
+            this.textBox6.Size = new System.Drawing.Size(184, 31);
+            this.textBox6.TabIndex = 42;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(224, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(108, 23);
+            this.label9.TabIndex = 44;
+            this.label9.Text = "Maid work time";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(12, 110);
+            this.textBox7.Location = new System.Drawing.Point(12, 114);
             this.textBox7.Name = "textBox7";
-            this.textBox7.PasswordChar = '*';
             this.textBox7.Size = new System.Drawing.Size(184, 31);
-            this.textBox7.TabIndex = 42;
+            this.textBox7.TabIndex = 45;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(227, 115);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.PasswordChar = '*';
+            this.textBox8.Size = new System.Drawing.Size(185, 31);
+            this.textBox8.TabIndex = 46;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(8, 84);
+            this.label13.Location = new System.Drawing.Point(7, 88);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(108, 23);
-            this.label13.TabIndex = 44;
-            this.label13.Text = "Maid work time";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(228, 110);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(184, 31);
-            this.textBox8.TabIndex = 45;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(11, 182);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.PasswordChar = '*';
-            this.textBox9.Size = new System.Drawing.Size(185, 31);
-            this.textBox9.TabIndex = 46;
+            this.label13.Size = new System.Drawing.Size(150, 23);
+            this.label13.TabIndex = 47;
+            this.label13.Text = "Maid work experience";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(223, 84);
+            this.label14.Location = new System.Drawing.Point(224, 88);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(150, 23);
-            this.label14.TabIndex = 47;
-            this.label14.Text = "Maid work experience";
+            this.label14.Size = new System.Drawing.Size(131, 23);
+            this.label14.TabIndex = 48;
+            this.label14.Text = "Maid work location";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(14, 181);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(184, 31);
+            this.textBox9.TabIndex = 58;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(8, 155);
+            this.label15.Location = new System.Drawing.Point(9, 155);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(131, 23);
-            this.label15.TabIndex = 48;
-            this.label15.Text = "Maid work location";
+            this.label15.Size = new System.Drawing.Size(121, 23);
+            this.label15.TabIndex = 57;
+            this.label15.Text = "Salary per month";
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(228, 248);
+            this.textBox10.Location = new System.Drawing.Point(13, 248);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(184, 31);
-            this.textBox10.TabIndex = 60;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(228, 41);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(185, 31);
-            this.textBox11.TabIndex = 49;
+            this.textBox10.TabIndex = 56;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(223, 222);
+            this.label16.Location = new System.Drawing.Point(226, 155);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(121, 23);
-            this.label16.TabIndex = 59;
-            this.label16.Text = "Salary per month";
+            this.label16.Size = new System.Drawing.Size(88, 23);
+            this.label16.TabIndex = 49;
+            this.label16.Text = "Date of Birth";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(223, 15);
+            this.label17.Location = new System.Drawing.Point(9, 222);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(110, 23);
-            this.label17.TabIndex = 50;
-            this.label17.Text = "Maid last name";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(12, 248);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(184, 31);
-            this.textBox12.TabIndex = 58;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(225, 155);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(88, 23);
-            this.label18.TabIndex = 51;
-            this.label18.Text = "Date of Birth";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(8, 222);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(105, 23);
-            this.label19.TabIndex = 57;
-            this.label19.Text = "Phone Number";
+            this.label17.Size = new System.Drawing.Size(105, 23);
+            this.label17.TabIndex = 55;
+            this.label17.Text = "Phone Number";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(229, 182);
+            this.dateTimePicker1.Location = new System.Drawing.Point(230, 182);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(184, 31);
-            this.dateTimePicker1.TabIndex = 52;
+            this.dateTimePicker1.TabIndex = 50;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(156, 317);
+            this.radioButton1.Location = new System.Drawing.Point(374, 252);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(63, 22);
-            this.radioButton1.TabIndex = 56;
+            this.radioButton1.TabIndex = 54;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Other";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // label20
+            // label18
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(9, 294);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 16);
-            this.label20.TabIndex = 53;
-            this.label20.Text = "Gender";
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(227, 229);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(53, 16);
+            this.label18.TabIndex = 51;
+            this.label18.Text = "Gender";
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(75, 317);
+            this.radioButton2.Location = new System.Drawing.Point(293, 252);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(75, 22);
-            this.radioButton2.TabIndex = 55;
+            this.radioButton2.TabIndex = 53;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -669,14 +681,15 @@ namespace BuaDaw
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(11, 317);
+            this.radioButton3.Location = new System.Drawing.Point(229, 252);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(58, 22);
-            this.radioButton3.TabIndex = 54;
+            this.radioButton3.TabIndex = 52;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Male";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
+
             // DeleteTab
             // 
             this.DeleteTab.BackColor = System.Drawing.Color.White;
@@ -722,15 +735,18 @@ namespace BuaDaw
             this.ViewUserInfo.Click += new System.EventHandler(this.button8_Click);
             // 
             // AdminLogOutButton
+
+            // label19
+
             // 
-            this.AdminLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.BackgroundImage")));
-            this.AdminLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 9);
-            this.AdminLogOutButton.Name = "AdminLogOutButton";
-            this.AdminLogOutButton.Size = new System.Drawing.Size(46, 41);
-            this.AdminLogOutButton.TabIndex = 7;
-            this.AdminLogOutButton.UseVisualStyleBackColor = true;
-            this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(492, 72);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(81, 28);
+            this.label19.TabIndex = 48;
+            this.label19.Text = "Maid List";
             // 
             // AdminHome
             // 
@@ -738,6 +754,7 @@ namespace BuaDaw
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1284, 761);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.ViewUserInfo);
             this.Controls.Add(this.UpdateInfoButton);
             this.Controls.Add(this.tabControl1);
@@ -780,8 +797,6 @@ namespace BuaDaw
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DateTimePicker datetime;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox phone;
@@ -802,29 +817,28 @@ namespace BuaDaw
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage AddTab;
         private System.Windows.Forms.TabPage UpdateTab;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.TabPage DeleteTab;
         private System.Windows.Forms.TabPage SearchTab;
         private System.Windows.Forms.Button UpdateInfoButton;
         private System.Windows.Forms.Button ViewUserInfo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Label label19;
     }
 }
