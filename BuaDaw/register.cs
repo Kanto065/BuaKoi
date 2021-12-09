@@ -220,6 +220,7 @@ namespace BuaDaw
                 userHome.Tag = this;
                 userHome.Show(this);
                 this.Hide();
+                //changes done
 
             }
         }
