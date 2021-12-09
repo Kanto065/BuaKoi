@@ -33,8 +33,6 @@ namespace BuaDaw
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.accept = new System.Windows.Forms.CheckBox();
             this.fname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
@@ -62,8 +60,6 @@ namespace BuaDaw
             this.location = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -93,32 +89,6 @@ namespace BuaDaw
             this.label1.TabIndex = 16;
             this.label1.Text = "Full name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(180, 379);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(158, 18);
-            this.linkLabel1.TabIndex = 15;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Tearm\'s and condition.";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // accept
-            // 
-            this.accept.AutoSize = true;
-            this.accept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accept.Location = new System.Drawing.Point(99, 378);
-            this.accept.Name = "accept";
-            this.accept.Size = new System.Drawing.Size(103, 22);
-            this.accept.TabIndex = 14;
-            this.accept.Text = "I accept all ";
-            this.accept.UseVisualStyleBackColor = true;
-            this.accept.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // fname
             // 
@@ -386,32 +356,12 @@ namespace BuaDaw
             this.label11.TabIndex = 39;
             this.label11.Text = "Password";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(337, 334);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 30);
-            this.textBox3.TabIndex = 42;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(335, 316);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 18);
-            this.label12.TabIndex = 41;
-            this.label12.Text = "Re-type Password";
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.password);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.location);
@@ -434,8 +384,6 @@ namespace BuaDaw
             this.Controls.Add(this.label4);
             this.Controls.Add(this.email);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.accept);
             this.Controls.Add(this.fname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -460,8 +408,6 @@ namespace BuaDaw
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.CheckBox accept;
         private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox email;
@@ -484,8 +430,6 @@ namespace BuaDaw
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.ErrorProvider errorProvider4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox location;
