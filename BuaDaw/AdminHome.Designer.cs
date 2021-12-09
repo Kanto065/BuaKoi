@@ -377,22 +377,24 @@ namespace BuaDaw
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(48, 582);
+            this.textBox5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(16, 582);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(323, 76);
+            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox5.Size = new System.Drawing.Size(466, 76);
             this.textBox5.TabIndex = 42;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(46, 556);
+            this.label7.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(7, 553);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 23);
+            this.label7.Size = new System.Drawing.Size(187, 26);
             this.label7.TabIndex = 43;
-            this.label7.Text = "Post announcement";
+            this.label7.Text = "📢Post announcement";
             // 
             // button6
             // 
@@ -400,7 +402,7 @@ namespace BuaDaw
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(48, 664);
+            this.button6.Location = new System.Drawing.Point(16, 674);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 46);
             this.button6.TabIndex = 44;
@@ -711,7 +713,7 @@ namespace BuaDaw
             this.ViewUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewUserInfo.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewUserInfo.ForeColor = System.Drawing.Color.White;
-            this.ViewUserInfo.Location = new System.Drawing.Point(495, 575);
+            this.ViewUserInfo.Location = new System.Drawing.Point(495, 582);
             this.ViewUserInfo.Name = "ViewUserInfo";
             this.ViewUserInfo.Size = new System.Drawing.Size(195, 46);
             this.ViewUserInfo.TabIndex = 47;
