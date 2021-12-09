@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
+using DAL.Entities;
+using DAL.Tables;
 
 namespace BuaDaw
 {
@@ -187,6 +189,39 @@ namespace BuaDaw
             var logIn = (LogIn)Tag;
             logIn.Show();
             this.Close();
+        }
+
+        RegisterData registerData = new RegisterData();
+        RegisterDatatable registerDatatable = new RegisterDatatable();
+        private void GetStarted_Click(object sender, EventArgs e)
+        {
+            registerData.FullName = fname.Text;
+            registerData.DoB = datetime.Value;
+            registerData.Password = password.Text;
+            if(male.Checked)
+            {
+                registerData.Gender = "Male";
+            }
+            else if(female.Checked)
+            {
+                registerData.Gender = "Female";
+            }
+            else if(other.Checked)
+            {
+                registerData.Gender = "Other";
+            }
+            
+            registerData.PhoneNumber = phone.Text;
+            registerData.Address = location.Text;
+            registerData.Email = email.Text;
+            if (registerDatatable.Insert(registerData))
+            {
+                UserHome userHome = new UserHome();
+                userHome.Tag = this;
+                userHome.Show(this);
+                this.Hide();
+
+            }
         }
     }
 }

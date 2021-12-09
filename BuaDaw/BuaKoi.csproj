@@ -165,5 +165,11 @@
   <ItemGroup>
     <None Include="Resources\log in.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{2f2cffbe-c2f2-4579-b943-e3c94db9b870}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
