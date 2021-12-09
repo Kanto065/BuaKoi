@@ -48,7 +48,7 @@ namespace BuaDaw
             this.label1 = new System.Windows.Forms.Label();
             this.fname = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.BackToUserHome = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -236,18 +236,19 @@ namespace BuaDaw
             this.dataGridView1.Size = new System.Drawing.Size(506, 150);
             this.dataGridView1.TabIndex = 61;
             // 
-            // linkLabel2
+            // BackToUserHome
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(12, 59);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(51, 17);
-            this.linkLabel2.TabIndex = 63;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "< Back";
+            this.BackToUserHome.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.BackToUserHome.AutoSize = true;
+            this.BackToUserHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToUserHome.LinkColor = System.Drawing.Color.Black;
+            this.BackToUserHome.Location = new System.Drawing.Point(12, 59);
+            this.BackToUserHome.Name = "BackToUserHome";
+            this.BackToUserHome.Size = new System.Drawing.Size(51, 17);
+            this.BackToUserHome.TabIndex = 63;
+            this.BackToUserHome.TabStop = true;
+            this.BackToUserHome.Text = "< Back";
+            this.BackToUserHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BackToUserHome_LinkClicked);
             // 
             // label2
             // 
@@ -280,7 +281,7 @@ namespace BuaDaw
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.BackToUserHome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox3);
@@ -304,6 +305,7 @@ namespace BuaDaw
             this.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "UserUpdateInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserUpdateInfo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -332,7 +334,7 @@ namespace BuaDaw
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel BackToUserHome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button4;
     }

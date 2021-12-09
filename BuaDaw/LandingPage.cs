@@ -49,9 +49,10 @@ namespace BuaDaw
 
         private void GetStarted_Click(object sender, EventArgs e)
         {
-            LogIn login = new LogIn();
+            LogIn logIn = new LogIn();
+            logIn.Tag = this;
+            logIn.Show(this);
             this.Hide();
-            login.Show();
         }
     }
 }

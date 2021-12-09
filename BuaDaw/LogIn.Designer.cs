@@ -31,24 +31,24 @@ namespace BuaDaw
         {
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
-            this.FAQ = new System.Windows.Forms.LinkLabel();
+            this.Register = new System.Windows.Forms.LinkLabel();
             this.email = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.GetStarted = new System.Windows.Forms.Button();
+            this.UserLogInButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.BackToLandingPage = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.TAC = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AdminLogInButton = new System.Windows.Forms.Button();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,19 +65,19 @@ namespace BuaDaw
             this.label2.TabIndex = 3;
             this.label2.Text = "Log in";
             // 
-            // FAQ
+            // Register
             // 
-            this.FAQ.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.FAQ.AutoSize = true;
-            this.FAQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FAQ.LinkColor = System.Drawing.Color.Black;
-            this.FAQ.Location = new System.Drawing.Point(266, 111);
-            this.FAQ.Name = "FAQ";
-            this.FAQ.Size = new System.Drawing.Size(83, 25);
-            this.FAQ.TabIndex = 4;
-            this.FAQ.TabStop = true;
-            this.FAQ.Text = "Register";
-            this.FAQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.FAQ_LinkClicked);
+            this.Register.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.Register.AutoSize = true;
+            this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Register.LinkColor = System.Drawing.Color.Black;
+            this.Register.Location = new System.Drawing.Point(266, 111);
+            this.Register.Name = "Register";
+            this.Register.Size = new System.Drawing.Size(83, 25);
+            this.Register.TabIndex = 4;
+            this.Register.TabStop = true;
+            this.Register.Text = "Register";
+            this.Register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.FAQ_LinkClicked);
             // 
             // email
             // 
@@ -95,6 +95,7 @@ namespace BuaDaw
             this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(241, 26);
             this.password.TabIndex = 6;
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             this.password.Leave += new System.EventHandler(this.password_Leave);
             // 
             // checkBox1
@@ -121,19 +122,19 @@ namespace BuaDaw
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Tearm\'s and condition.";
             // 
-            // GetStarted
+            // UserLogInButton
             // 
-            this.GetStarted.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.GetStarted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GetStarted.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GetStarted.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GetStarted.Location = new System.Drawing.Point(119, 310);
-            this.GetStarted.Name = "GetStarted";
-            this.GetStarted.Size = new System.Drawing.Size(241, 42);
-            this.GetStarted.TabIndex = 9;
-            this.GetStarted.Text = "Log in";
-            this.GetStarted.UseVisualStyleBackColor = false;
-            this.GetStarted.Click += new System.EventHandler(this.GetStarted_Click);
+            this.UserLogInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.UserLogInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserLogInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLogInButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.UserLogInButton.Location = new System.Drawing.Point(119, 310);
+            this.UserLogInButton.Name = "UserLogInButton";
+            this.UserLogInButton.Size = new System.Drawing.Size(241, 42);
+            this.UserLogInButton.TabIndex = 9;
+            this.UserLogInButton.Text = "Log in";
+            this.UserLogInButton.UseVisualStyleBackColor = false;
+            this.UserLogInButton.Click += new System.EventHandler(this.GetStarted_Click);
             // 
             // label1
             // 
@@ -157,18 +158,19 @@ namespace BuaDaw
             this.label3.TabIndex = 11;
             this.label3.Text = "Password";
             // 
-            // linkLabel2
+            // BackToLandingPage
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(116, 74);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(51, 17);
-            this.linkLabel2.TabIndex = 12;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "< Back";
+            this.BackToLandingPage.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.BackToLandingPage.AutoSize = true;
+            this.BackToLandingPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToLandingPage.LinkColor = System.Drawing.Color.Black;
+            this.BackToLandingPage.Location = new System.Drawing.Point(116, 74);
+            this.BackToLandingPage.Name = "BackToLandingPage";
+            this.BackToLandingPage.Size = new System.Drawing.Size(51, 17);
+            this.BackToLandingPage.TabIndex = 12;
+            this.BackToLandingPage.TabStop = true;
+            this.BackToLandingPage.Text = "< Back";
+            this.BackToLandingPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BackToLandingPage_LinkClicked);
             // 
             // label4
             // 
@@ -228,29 +230,19 @@ namespace BuaDaw
             // 
             this.errorProvider2.ContainerControl = this;
             // 
-            // button1
+            // AdminLogInButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(119, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 42);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Log in as Admin";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BuaDaw.Properties.Resources.log_in;
-            this.pictureBox1.Location = new System.Drawing.Point(467, 47);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(535, 481);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.AdminLogInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.AdminLogInButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.AdminLogInButton.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminLogInButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AdminLogInButton.Location = new System.Drawing.Point(119, 358);
+            this.AdminLogInButton.Name = "AdminLogInButton";
+            this.AdminLogInButton.Size = new System.Drawing.Size(241, 42);
+            this.AdminLogInButton.TabIndex = 17;
+            this.AdminLogInButton.Text = "Log in as Admin";
+            this.AdminLogInButton.UseVisualStyleBackColor = false;
+            this.AdminLogInButton.Click += new System.EventHandler(this.AdminLogInButton_Click);
             // 
             // linkLabel5
             // 
@@ -265,6 +257,17 @@ namespace BuaDaw
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "Forgotten password?";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BuaDaw.Properties.Resources.log_in;
+            this.pictureBox1.Location = new System.Drawing.Point(467, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(535, 481);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -272,20 +275,20 @@ namespace BuaDaw
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
             this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AdminLogInButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.TAC);
             this.Controls.Add(this.linkLabel4);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.BackToLandingPage);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.GetStarted);
+            this.Controls.Add(this.UserLogInButton);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.email);
-            this.Controls.Add(this.FAQ);
+            this.Controls.Add(this.Register);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -306,22 +309,22 @@ namespace BuaDaw
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel FAQ;
+        private System.Windows.Forms.LinkLabel Register;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button GetStarted;
+        private System.Windows.Forms.Button UserLogInButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel BackToLandingPage;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel TAC;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AdminLogInButton;
         private System.Windows.Forms.LinkLabel linkLabel5;
     }
 }

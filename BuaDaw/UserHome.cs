@@ -21,5 +21,20 @@ namespace BuaDaw
         {
 
         }
+
+        private void UserUpdateInfoButton_Click(object sender, EventArgs e)
+        {
+            UserUpdateInfo userUpdateInfo = new UserUpdateInfo();
+            userUpdateInfo.Tag = this;
+            userUpdateInfo.Show(this);
+            this.Hide();
+        }
+
+        private void UserLogOutButton_Click(object sender, EventArgs e)
+        {
+            var logIn = (LogIn)Tag;
+            logIn.Show();
+            this.Close();
+        }
     }
 }

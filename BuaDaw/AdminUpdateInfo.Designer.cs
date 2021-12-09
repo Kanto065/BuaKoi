@@ -67,6 +67,7 @@ namespace BuaDaw
             this.linkLabel2.TabIndex = 85;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "< Back";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label2
             // 
@@ -160,6 +161,7 @@ namespace BuaDaw
             this.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "AdminUpdateInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminUpdateInfo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

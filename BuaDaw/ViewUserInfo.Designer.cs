@@ -36,7 +36,7 @@ namespace BuaDaw
             this.fname = new System.Windows.Forms.TextBox();
             this.phone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.BackToAdminHome = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -104,18 +104,19 @@ namespace BuaDaw
             this.label7.TabIndex = 55;
             this.label7.Text = "Phone Number";
             // 
-            // linkLabel2
+            // BackToAdminHome
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(12, 52);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(51, 17);
-            this.linkLabel2.TabIndex = 65;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "< Back";
+            this.BackToAdminHome.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.BackToAdminHome.AutoSize = true;
+            this.BackToAdminHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToAdminHome.LinkColor = System.Drawing.Color.Black;
+            this.BackToAdminHome.Location = new System.Drawing.Point(12, 52);
+            this.BackToAdminHome.Name = "BackToAdminHome";
+            this.BackToAdminHome.Size = new System.Drawing.Size(51, 17);
+            this.BackToAdminHome.TabIndex = 65;
+            this.BackToAdminHome.TabStop = true;
+            this.BackToAdminHome.Text = "< Back";
+            this.BackToAdminHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label2
             // 
@@ -148,7 +149,7 @@ namespace BuaDaw
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.BackToAdminHome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.phone);
             this.Controls.Add(this.label7);
@@ -160,6 +161,7 @@ namespace BuaDaw
             this.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "ViewUserInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewUserInfo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -176,7 +178,7 @@ namespace BuaDaw
         private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.TextBox phone;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel BackToAdminHome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button5;
     }

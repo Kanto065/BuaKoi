@@ -16,5 +16,12 @@ namespace BuaDaw
         {
             InitializeComponent();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var adminHome = (AdminHome)Tag;
+            adminHome.Show();
+            this.Close();
+        }
     }
 }

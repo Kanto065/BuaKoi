@@ -66,7 +66,7 @@ namespace BuaDaw
             }
         }
 
-        private void textBox2_Leave(object sender, EventArgs e)
+        /*private void textBox2_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(lname.Text) == true)
             {
@@ -78,7 +78,7 @@ namespace BuaDaw
             {
                 errorProvider2.Clear();
             }
-        }
+        }*/
 
         private void textBox3_Leave(object sender, EventArgs e)
         {
@@ -117,7 +117,7 @@ namespace BuaDaw
 
         }
 
-        private void GetStarted_Click(object sender, EventArgs e)
+        /*private void GetStarted_Click(object sender, EventArgs e)
         {
             // CREATE BUTTON
             MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
@@ -165,7 +165,7 @@ namespace BuaDaw
                 MessageBox.Show("Please input Username and Password", "Error");
             }
             //lastline
-        }
+        }*/
 
         private void phone_TextChanged(object sender, EventArgs e)
         {
@@ -180,6 +180,13 @@ namespace BuaDaw
         private void Register_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BackToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var logIn = (LogIn)Tag;
+            logIn.Show();
+            this.Close();
         }
     }
 }

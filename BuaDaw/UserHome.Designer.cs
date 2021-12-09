@@ -32,12 +32,12 @@ namespace BuaDaw
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserHome));
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UserUpdateInfoButton = new System.Windows.Forms.Button();
+            this.UserLogOutButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,8 +55,8 @@ namespace BuaDaw
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.UserUpdateInfoButton);
+            this.panel1.Controls.Add(this.UserLogOutButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -66,15 +66,26 @@ namespace BuaDaw
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button1
+            // UserUpdateInfoButton
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(917, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 41);
-            this.button1.TabIndex = 8;
-            this.button1.UseVisualStyleBackColor = true;
+            this.UserUpdateInfoButton.Location = new System.Drawing.Point(793, 23);
+            this.UserUpdateInfoButton.Name = "UserUpdateInfoButton";
+            this.UserUpdateInfoButton.Size = new System.Drawing.Size(118, 41);
+            this.UserUpdateInfoButton.TabIndex = 9;
+            this.UserUpdateInfoButton.Text = "Update info";
+            this.UserUpdateInfoButton.UseVisualStyleBackColor = true;
+            this.UserUpdateInfoButton.Click += new System.EventHandler(this.UserUpdateInfoButton_Click);
+            // 
+            // UserLogOutButton
+            // 
+            this.UserLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UserLogOutButton.BackgroundImage")));
+            this.UserLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.UserLogOutButton.Location = new System.Drawing.Point(917, 23);
+            this.UserLogOutButton.Name = "UserLogOutButton";
+            this.UserLogOutButton.Size = new System.Drawing.Size(46, 41);
+            this.UserLogOutButton.TabIndex = 8;
+            this.UserLogOutButton.UseVisualStyleBackColor = true;
+            this.UserLogOutButton.Click += new System.EventHandler(this.UserLogOutButton_Click);
             // 
             // label1
             // 
@@ -117,15 +128,6 @@ namespace BuaDaw
             this.label4.TabIndex = 8;
             this.label4.Text = "text";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(793, 23);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 41);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Update info";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // UserHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
@@ -155,9 +157,9 @@ namespace BuaDaw
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button UserLogOutButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button UserUpdateInfoButton;
     }
 }

@@ -44,7 +44,7 @@ namespace BuaDaw
             this.male = new System.Windows.Forms.RadioButton();
             this.female = new System.Windows.Forms.RadioButton();
             this.other = new System.Windows.Forms.RadioButton();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.BackToLogin = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.phone = new System.Windows.Forms.TextBox();
             this.GetStarted = new System.Windows.Forms.Button();
@@ -215,18 +215,19 @@ namespace BuaDaw
             this.other.Text = "Other";
             this.other.UseVisualStyleBackColor = true;
             // 
-            // linkLabel2
+            // BackToLogin
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(94, 55);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(51, 17);
-            this.linkLabel2.TabIndex = 26;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "< Back";
+            this.BackToLogin.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.BackToLogin.AutoSize = true;
+            this.BackToLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToLogin.LinkColor = System.Drawing.Color.Black;
+            this.BackToLogin.Location = new System.Drawing.Point(94, 55);
+            this.BackToLogin.Name = "BackToLogin";
+            this.BackToLogin.Size = new System.Drawing.Size(51, 17);
+            this.BackToLogin.TabIndex = 26;
+            this.BackToLogin.TabStop = true;
+            this.BackToLogin.Text = "< Back";
+            this.BackToLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BackToLogin_LinkClicked);
             // 
             // label7
             // 
@@ -260,7 +261,6 @@ namespace BuaDaw
             this.GetStarted.TabIndex = 29;
             this.GetStarted.Text = "Register";
             this.GetStarted.UseVisualStyleBackColor = false;
-            this.GetStarted.Click += new System.EventHandler(this.GetStarted_Click);
             // 
             // label8
             // 
@@ -423,7 +423,7 @@ namespace BuaDaw
             this.Controls.Add(this.GetStarted);
             this.Controls.Add(this.phone);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.BackToLogin);
             this.Controls.Add(this.other);
             this.Controls.Add(this.female);
             this.Controls.Add(this.male);
@@ -470,7 +470,7 @@ namespace BuaDaw
         private System.Windows.Forms.RadioButton male;
         private System.Windows.Forms.RadioButton female;
         private System.Windows.Forms.RadioButton other;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel BackToLogin;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox phone;
         private System.Windows.Forms.Button GetStarted;

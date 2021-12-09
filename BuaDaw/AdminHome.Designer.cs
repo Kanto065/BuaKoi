@@ -85,9 +85,9 @@ namespace BuaDaw
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.DeleteTab = new System.Windows.Forms.TabPage();
             this.SearchTab = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UpdateInfoButton = new System.Windows.Forms.Button();
+            this.ViewUserInfo = new System.Windows.Forms.Button();
+            this.AdminLogOutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.AddTab.SuspendLayout();
@@ -695,37 +695,40 @@ namespace BuaDaw
             this.SearchTab.TabIndex = 3;
             this.SearchTab.Text = "Search";
             // 
-            // button7
+            // UpdateInfoButton
             // 
-            this.button7.Location = new System.Drawing.Point(1080, 9);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(118, 41);
-            this.button7.TabIndex = 46;
-            this.button7.Text = "Update info";
-            this.button7.UseVisualStyleBackColor = true;
+            this.UpdateInfoButton.Location = new System.Drawing.Point(1080, 9);
+            this.UpdateInfoButton.Name = "UpdateInfoButton";
+            this.UpdateInfoButton.Size = new System.Drawing.Size(118, 41);
+            this.UpdateInfoButton.TabIndex = 46;
+            this.UpdateInfoButton.Text = "Update info";
+            this.UpdateInfoButton.UseVisualStyleBackColor = true;
+            this.UpdateInfoButton.Click += new System.EventHandler(this.UpdateInfoButton_Click);
             // 
-            // button8
+            // ViewUserInfo
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(495, 575);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(195, 46);
-            this.button8.TabIndex = 47;
-            this.button8.Text = "View User info";
-            this.button8.UseVisualStyleBackColor = false;
+            this.ViewUserInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.ViewUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewUserInfo.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewUserInfo.ForeColor = System.Drawing.Color.White;
+            this.ViewUserInfo.Location = new System.Drawing.Point(495, 575);
+            this.ViewUserInfo.Name = "ViewUserInfo";
+            this.ViewUserInfo.Size = new System.Drawing.Size(195, 46);
+            this.ViewUserInfo.TabIndex = 47;
+            this.ViewUserInfo.Text = "View User info";
+            this.ViewUserInfo.UseVisualStyleBackColor = false;
+            this.ViewUserInfo.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button1
+            // AdminLogOutButton
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(1204, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 41);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = true;
+            this.AdminLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.BackgroundImage")));
+            this.AdminLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 9);
+            this.AdminLogOutButton.Name = "AdminLogOutButton";
+            this.AdminLogOutButton.Size = new System.Drawing.Size(46, 41);
+            this.AdminLogOutButton.TabIndex = 7;
+            this.AdminLogOutButton.UseVisualStyleBackColor = true;
+            this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
             // 
             // AdminHome
             // 
@@ -733,13 +736,13 @@ namespace BuaDaw
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1284, 761);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.ViewUserInfo);
+            this.Controls.Add(this.UpdateInfoButton);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AdminLogOutButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
@@ -766,7 +769,7 @@ namespace BuaDaw
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AdminLogOutButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox password;
@@ -819,7 +822,7 @@ namespace BuaDaw
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.TabPage DeleteTab;
         private System.Windows.Forms.TabPage SearchTab;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button UpdateInfoButton;
+        private System.Windows.Forms.Button ViewUserInfo;
     }
 }

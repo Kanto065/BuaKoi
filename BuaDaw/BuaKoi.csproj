@@ -59,9 +59,6 @@
     <Compile Include="AdminUpdateInfo.Designer.cs">
       <DependentUpon>AdminUpdateInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoundPictureBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="UserHome.cs">
       <SubType>Form</SubType>
     </Compile>

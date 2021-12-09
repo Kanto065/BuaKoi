@@ -32,8 +32,9 @@ namespace BuaDaw
         private void FAQ_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Register register = new Register();
-            this.Hide();
+            register.Tag = this;
             register.Show();
+            this.Hide();
         }
 
         private void password_Leave(object sender, EventArgs e)
@@ -81,7 +82,11 @@ namespace BuaDaw
             mdr = command.ExecuteReader();
             if (mdr.Read())
             {
-                MessageBox.Show("Login Successful!");
+                //MessageBox.Show("Login Successful!");
+                
+                UserHome userHome = new UserHome();
+                userHome.Tag = this;
+                userHome.Show(this);
                 this.Hide();
             }
             else
@@ -97,6 +102,53 @@ namespace BuaDaw
             }
 
 
+        }
+
+        private void BackToLandingPage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var landingPage = (LandingPage)Tag;
+            landingPage.Show();
+            this.Close();
+        }
+
+        private void BackToLandingPageB_Click(object sender, EventArgs e)
+        {
+            var landingPage = (LandingPage)Tag;
+            landingPage.Show();
+            this.Close();
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminLogInButton_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string selectQuery = "SELECT * FROM buakoi.admin WHERE Email = '" + email.Text + "' AND Password = '" + password.Text + "';";
+            command = new MySqlCommand(selectQuery, connection);
+            mdr = command.ExecuteReader();
+            if (mdr.Read())
+            {
+                //MessageBox.Show("Login Successful!");
+
+                AdminHome adminHome = new AdminHome();
+                adminHome.Tag = this;
+                adminHome.Show(this);
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Login Information! Try again.");
+            }
+
+            connection.Close();
+
+            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(password.Text))
+            {
+                MessageBox.Show("Please input Username and Password", "Error");
+            }
         }
     }
 }
