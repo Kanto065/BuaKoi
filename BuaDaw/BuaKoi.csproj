@@ -53,6 +53,12 @@
     <Compile Include="AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminUpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateInfo.Designer.cs">
+      <DependentUpon>AdminUpdateInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -88,8 +94,23 @@
     <Compile Include="register3.Designer.cs">
       <DependentUpon>register3.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserUpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserUpdateInfo.Designer.cs">
+      <DependentUpon>UserUpdateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUserInfo.Designer.cs">
+      <DependentUpon>ViewUserInfo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateInfo.resx">
+      <DependentUpon>AdminUpdateInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
@@ -115,6 +136,12 @@
     </Compile>
     <EmbeddedResource Include="register3.resx">
       <DependentUpon>register3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUpdateInfo.resx">
+      <DependentUpon>UserUpdateInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUserInfo.resx">
+      <DependentUpon>ViewUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

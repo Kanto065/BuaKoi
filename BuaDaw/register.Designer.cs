@@ -32,11 +32,9 @@ namespace BuaDaw
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.accept = new System.Windows.Forms.CheckBox();
-            this.lname = new System.Windows.Forms.TextBox();
             this.fname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
@@ -84,18 +82,6 @@ namespace BuaDaw
             this.label2.TabIndex = 4;
             this.label2.Text = "Register";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(335, 145);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 15);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Last name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -103,9 +89,9 @@ namespace BuaDaw
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(96, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.Size = new System.Drawing.Size(62, 15);
             this.label1.TabIndex = 16;
-            this.label1.Text = "First name";
+            this.label1.Text = "Full name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // linkLabel1
@@ -114,7 +100,7 @@ namespace BuaDaw
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(181, 431);
+            this.linkLabel1.Location = new System.Drawing.Point(180, 379);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(132, 15);
             this.linkLabel1.TabIndex = 15;
@@ -126,22 +112,13 @@ namespace BuaDaw
             // 
             this.accept.AutoSize = true;
             this.accept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accept.Location = new System.Drawing.Point(100, 430);
+            this.accept.Location = new System.Drawing.Point(99, 378);
             this.accept.Name = "accept";
             this.accept.Size = new System.Drawing.Size(87, 19);
             this.accept.TabIndex = 14;
             this.accept.Text = "I accept all ";
             this.accept.UseVisualStyleBackColor = true;
             this.accept.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // lname
-            // 
-            this.lname.Location = new System.Drawing.Point(338, 163);
-            this.lname.Name = "lname";
-            this.lname.Size = new System.Drawing.Size(212, 26);
-            this.lname.TabIndex = 13;
-            this.lname.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.lname.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // fname
             // 
@@ -196,7 +173,7 @@ namespace BuaDaw
             this.gender.AutoSize = true;
             this.gender.BackColor = System.Drawing.Color.Transparent;
             this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.Location = new System.Drawing.Point(99, 316);
+            this.gender.Location = new System.Drawing.Point(336, 258);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(48, 15);
             this.gender.TabIndex = 22;
@@ -206,7 +183,7 @@ namespace BuaDaw
             // 
             this.male.AutoSize = true;
             this.male.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.male.Location = new System.Drawing.Point(102, 334);
+            this.male.Location = new System.Drawing.Point(339, 276);
             this.male.Name = "male";
             this.male.Size = new System.Drawing.Size(58, 22);
             this.male.TabIndex = 23;
@@ -218,7 +195,7 @@ namespace BuaDaw
             // 
             this.female.AutoSize = true;
             this.female.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.female.Location = new System.Drawing.Point(166, 334);
+            this.female.Location = new System.Drawing.Point(403, 276);
             this.female.Name = "female";
             this.female.Size = new System.Drawing.Size(75, 22);
             this.female.TabIndex = 24;
@@ -230,7 +207,7 @@ namespace BuaDaw
             // 
             this.other.AutoSize = true;
             this.other.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.other.Location = new System.Drawing.Point(247, 334);
+            this.other.Location = new System.Drawing.Point(484, 276);
             this.other.Name = "other";
             this.other.Size = new System.Drawing.Size(63, 22);
             this.other.TabIndex = 25;
@@ -256,7 +233,7 @@ namespace BuaDaw
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(97, 258);
+            this.label7.Location = new System.Drawing.Point(335, 145);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 15);
             this.label7.TabIndex = 27;
@@ -264,7 +241,7 @@ namespace BuaDaw
             // 
             // phone
             // 
-            this.phone.Location = new System.Drawing.Point(99, 276);
+            this.phone.Location = new System.Drawing.Point(337, 163);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(213, 26);
             this.phone.TabIndex = 28;
@@ -277,7 +254,7 @@ namespace BuaDaw
             this.GetStarted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GetStarted.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GetStarted.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GetStarted.Location = new System.Drawing.Point(219, 477);
+            this.GetStarted.Location = new System.Drawing.Point(213, 423);
             this.GetStarted.Name = "GetStarted";
             this.GetStarted.Size = new System.Drawing.Size(213, 42);
             this.GetStarted.TabIndex = 29;
@@ -377,7 +354,7 @@ namespace BuaDaw
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(335, 258);
+            this.label10.Location = new System.Drawing.Point(96, 258);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 15);
             this.label10.TabIndex = 37;
@@ -385,14 +362,14 @@ namespace BuaDaw
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(338, 276);
+            this.textBox1.Location = new System.Drawing.Point(99, 276);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(213, 26);
             this.textBox1.TabIndex = 38;
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(100, 386);
+            this.password.Location = new System.Drawing.Point(99, 334);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(213, 26);
             this.password.TabIndex = 40;
@@ -402,7 +379,7 @@ namespace BuaDaw
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(98, 368);
+            this.label11.Location = new System.Drawing.Point(97, 316);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(61, 15);
             this.label11.TabIndex = 39;
@@ -410,7 +387,7 @@ namespace BuaDaw
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(338, 386);
+            this.textBox3.Location = new System.Drawing.Point(337, 334);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(213, 26);
             this.textBox3.TabIndex = 42;
@@ -420,7 +397,7 @@ namespace BuaDaw
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(336, 368);
+            this.label12.Location = new System.Drawing.Point(335, 316);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(106, 15);
             this.label12.TabIndex = 41;
@@ -455,11 +432,9 @@ namespace BuaDaw
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.email);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.accept);
-            this.Controls.Add(this.lname);
             this.Controls.Add(this.fname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -483,11 +458,9 @@ namespace BuaDaw
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.CheckBox accept;
-        private System.Windows.Forms.TextBox lname;
         private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox email;

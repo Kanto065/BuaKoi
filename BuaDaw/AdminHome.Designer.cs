@@ -33,7 +33,6 @@ namespace BuaDaw
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.TextBox();
@@ -64,8 +63,6 @@ namespace BuaDaw
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTab = new System.Windows.Forms.TabPage();
             this.UpdateTab = new System.Windows.Forms.TabPage();
-            this.DeleteTab = new System.Windows.Forms.TabPage();
-            this.SearchTab = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -86,6 +83,11 @@ namespace BuaDaw
             this.label20 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.DeleteTab = new System.Windows.Forms.TabPage();
+            this.SearchTab = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.AddTab.SuspendLayout();
@@ -124,16 +126,6 @@ namespace BuaDaw
             this.label2.Size = new System.Drawing.Size(74, 37);
             this.label2.TabIndex = 5;
             this.label2.Text = "Hello!";
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(1204, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 41);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -489,26 +481,6 @@ namespace BuaDaw
             this.UpdateTab.TabIndex = 1;
             this.UpdateTab.Text = "Update";
             // 
-            // DeleteTab
-            // 
-            this.DeleteTab.BackColor = System.Drawing.Color.White;
-            this.DeleteTab.Controls.Add(this.button2);
-            this.DeleteTab.Location = new System.Drawing.Point(4, 37);
-            this.DeleteTab.Name = "DeleteTab";
-            this.DeleteTab.Size = new System.Drawing.Size(466, 421);
-            this.DeleteTab.TabIndex = 2;
-            this.DeleteTab.Text = "Delete";
-            // 
-            // SearchTab
-            // 
-            this.SearchTab.BackColor = System.Drawing.Color.White;
-            this.SearchTab.Controls.Add(this.button5);
-            this.SearchTab.Location = new System.Drawing.Point(4, 37);
-            this.SearchTab.Name = "SearchTab";
-            this.SearchTab.Size = new System.Drawing.Size(466, 421);
-            this.SearchTab.TabIndex = 3;
-            this.SearchTab.Text = "Search";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -703,12 +675,66 @@ namespace BuaDaw
             this.radioButton3.Text = "Male";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
+            // DeleteTab
+            // 
+            this.DeleteTab.BackColor = System.Drawing.Color.White;
+            this.DeleteTab.Controls.Add(this.button2);
+            this.DeleteTab.Location = new System.Drawing.Point(4, 37);
+            this.DeleteTab.Name = "DeleteTab";
+            this.DeleteTab.Size = new System.Drawing.Size(466, 421);
+            this.DeleteTab.TabIndex = 2;
+            this.DeleteTab.Text = "Delete";
+            // 
+            // SearchTab
+            // 
+            this.SearchTab.BackColor = System.Drawing.Color.White;
+            this.SearchTab.Controls.Add(this.button5);
+            this.SearchTab.Location = new System.Drawing.Point(4, 37);
+            this.SearchTab.Name = "SearchTab";
+            this.SearchTab.Size = new System.Drawing.Size(466, 421);
+            this.SearchTab.TabIndex = 3;
+            this.SearchTab.Text = "Search";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(1080, 9);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(118, 41);
+            this.button7.TabIndex = 46;
+            this.button7.Text = "Update info";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(495, 575);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(195, 46);
+            this.button8.TabIndex = 47;
+            this.button8.Text = "View User info";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(1204, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 41);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1284, 761);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label7);
@@ -793,5 +819,7 @@ namespace BuaDaw
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.TabPage DeleteTab;
         private System.Windows.Forms.TabPage SearchTab;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
