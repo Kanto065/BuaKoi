@@ -61,11 +61,6 @@ namespace BuaDaw
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTab = new System.Windows.Forms.TabPage();
             this.UpdateTab = new System.Windows.Forms.TabPage();
-            this.DeleteTab = new System.Windows.Forms.TabPage();
-            this.SearchTab = new System.Windows.Forms.TabPage();
-            this.UpdateInfoButton = new System.Windows.Forms.Button();
-            this.ViewUserInfo = new System.Windows.Forms.Button();
-            this.AdminLogOutButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -84,7 +79,13 @@ namespace BuaDaw
             this.label18 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.DeleteTab = new System.Windows.Forms.TabPage();
+            this.SearchTab = new System.Windows.Forms.TabPage();
+            this.UpdateInfoButton = new System.Windows.Forms.Button();
+            this.ViewUserInfo = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
+            this.ViewHiringStatusButton = new System.Windows.Forms.Button();
+            this.AdminLogOutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.AddTab.SuspendLayout();
@@ -458,61 +459,6 @@ namespace BuaDaw
             this.UpdateTab.TabIndex = 1;
             this.UpdateTab.Text = "Update";
             // 
-            // DeleteTab
-            // 
-            this.DeleteTab.BackColor = System.Drawing.Color.White;
-            this.DeleteTab.Controls.Add(this.button2);
-            this.DeleteTab.Location = new System.Drawing.Point(4, 37);
-            this.DeleteTab.Name = "DeleteTab";
-            this.DeleteTab.Size = new System.Drawing.Size(466, 421);
-            this.DeleteTab.TabIndex = 2;
-            this.DeleteTab.Text = "Delete";
-            // 
-            // SearchTab
-            // 
-            this.SearchTab.BackColor = System.Drawing.Color.White;
-            this.SearchTab.Controls.Add(this.button5);
-            this.SearchTab.Location = new System.Drawing.Point(4, 37);
-            this.SearchTab.Name = "SearchTab";
-            this.SearchTab.Size = new System.Drawing.Size(466, 421);
-            this.SearchTab.TabIndex = 3;
-            this.SearchTab.Text = "Search";
-            // 
-            // UpdateInfoButton
-            // 
-            this.UpdateInfoButton.Location = new System.Drawing.Point(1080, 9);
-            this.UpdateInfoButton.Name = "UpdateInfoButton";
-            this.UpdateInfoButton.Size = new System.Drawing.Size(118, 41);
-            this.UpdateInfoButton.TabIndex = 46;
-            this.UpdateInfoButton.Text = "Update info";
-            this.UpdateInfoButton.UseVisualStyleBackColor = true;
-            this.UpdateInfoButton.Click += new System.EventHandler(this.UpdateInfoButton_Click);
-            // 
-            // ViewUserInfo
-            // 
-            this.ViewUserInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.ViewUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ViewUserInfo.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewUserInfo.ForeColor = System.Drawing.Color.White;
-            this.ViewUserInfo.Location = new System.Drawing.Point(495, 575);
-            this.ViewUserInfo.Name = "ViewUserInfo";
-            this.ViewUserInfo.Size = new System.Drawing.Size(195, 46);
-            this.ViewUserInfo.TabIndex = 47;
-            this.ViewUserInfo.Text = "View User List";
-            this.ViewUserInfo.UseVisualStyleBackColor = false;
-            this.ViewUserInfo.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // AdminLogOutButton
-            // 
-            this.AdminLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.BackgroundImage")));
-            this.AdminLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 9);
-            this.AdminLogOutButton.Name = "AdminLogOutButton";
-            this.AdminLogOutButton.Size = new System.Drawing.Size(46, 41);
-            this.AdminLogOutButton.TabIndex = 7;
-            this.AdminLogOutButton.UseVisualStyleBackColor = true;
-            this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -689,7 +635,6 @@ namespace BuaDaw
             this.radioButton3.Text = "Male";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-
             // DeleteTab
             // 
             this.DeleteTab.BackColor = System.Drawing.Color.White;
@@ -734,10 +679,7 @@ namespace BuaDaw
             this.ViewUserInfo.UseVisualStyleBackColor = false;
             this.ViewUserInfo.Click += new System.EventHandler(this.button8_Click);
             // 
-            // AdminLogOutButton
-
             // label19
-
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
@@ -748,12 +690,38 @@ namespace BuaDaw
             this.label19.TabIndex = 48;
             this.label19.Text = "Maid List";
             // 
+            // ViewHiringStatusButton
+            // 
+            this.ViewHiringStatusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.ViewHiringStatusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewHiringStatusButton.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewHiringStatusButton.ForeColor = System.Drawing.Color.White;
+            this.ViewHiringStatusButton.Location = new System.Drawing.Point(722, 582);
+            this.ViewHiringStatusButton.Name = "ViewHiringStatusButton";
+            this.ViewHiringStatusButton.Size = new System.Drawing.Size(201, 46);
+            this.ViewHiringStatusButton.TabIndex = 49;
+            this.ViewHiringStatusButton.Text = "View Hiring Status";
+            this.ViewHiringStatusButton.UseVisualStyleBackColor = false;
+            this.ViewHiringStatusButton.Click += new System.EventHandler(this.ViewHiringStatusButton_Click);
+            // 
+            // AdminLogOutButton
+            // 
+            this.AdminLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.BackgroundImage")));
+            this.AdminLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 9);
+            this.AdminLogOutButton.Name = "AdminLogOutButton";
+            this.AdminLogOutButton.Size = new System.Drawing.Size(46, 41);
+            this.AdminLogOutButton.TabIndex = 7;
+            this.AdminLogOutButton.UseVisualStyleBackColor = true;
+            this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1284, 761);
+            this.Controls.Add(this.ViewHiringStatusButton);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.ViewUserInfo);
             this.Controls.Add(this.UpdateInfoButton);
@@ -840,5 +808,6 @@ namespace BuaDaw
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button ViewHiringStatusButton;
     }
 }

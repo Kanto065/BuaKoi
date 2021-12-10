@@ -54,5 +54,13 @@ namespace BuaDaw
             logIn.Show();
             this.Close();
         }
+
+        private void ViewHiringStatusButton_Click(object sender, EventArgs e)
+        {
+            ViewHiringStatus viewHiringStatus = new ViewHiringStatus();
+            viewHiringStatus.Tag = this;
+            viewHiringStatus.Show(this);
+            this.Hide();
+        }
     }
 }
