@@ -10,10 +10,12 @@ namespace DAL
     public class Database
     {
         public RegisterDatatable userinfo { get; set; }
+        //public MaidDatatable maidinfo { get; set; }
 
         public Database()
         {
             userinfo = new RegisterDatatable();
+           // maidinfo = new MaidDatatable();
             //dataGridView1.DataSource = new Database().InfoTable.Get();
             
         }

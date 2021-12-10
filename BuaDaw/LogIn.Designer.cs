@@ -58,10 +58,10 @@ namespace BuaDaw
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(114, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 25);
+            this.label2.Size = new System.Drawing.Size(74, 36);
             this.label2.TabIndex = 3;
             this.label2.Text = "Log in";
             // 
@@ -69,11 +69,11 @@ namespace BuaDaw
             // 
             this.Register.ActiveLinkColor = System.Drawing.Color.Blue;
             this.Register.AutoSize = true;
-            this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Register.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Register.LinkColor = System.Drawing.Color.Black;
             this.Register.Location = new System.Drawing.Point(266, 111);
             this.Register.Name = "Register";
-            this.Register.Size = new System.Drawing.Size(83, 25);
+            this.Register.Size = new System.Drawing.Size(94, 36);
             this.Register.TabIndex = 4;
             this.Register.TabStop = true;
             this.Register.Text = "Register";
@@ -140,10 +140,10 @@ namespace BuaDaw
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(116, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.Size = new System.Drawing.Size(45, 22);
             this.label1.TabIndex = 10;
             this.label1.Text = "Email ";
             // 
@@ -162,11 +162,11 @@ namespace BuaDaw
             // 
             this.BackToLandingPage.ActiveLinkColor = System.Drawing.Color.Blue;
             this.BackToLandingPage.AutoSize = true;
-            this.BackToLandingPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToLandingPage.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackToLandingPage.LinkColor = System.Drawing.Color.Black;
             this.BackToLandingPage.Location = new System.Drawing.Point(116, 74);
             this.BackToLandingPage.Name = "BackToLandingPage";
-            this.BackToLandingPage.Size = new System.Drawing.Size(51, 17);
+            this.BackToLandingPage.Size = new System.Drawing.Size(52, 23);
             this.BackToLandingPage.TabIndex = 12;
             this.BackToLandingPage.TabStop = true;
             this.BackToLandingPage.Text = "< Back";
