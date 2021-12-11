@@ -14,7 +14,10 @@ namespace BuaDaw
 {
     public partial class LogIn : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;user id=root;database=buakoiprotik");
+    
+            public static string passEmail;
+
+        MySqlConnection connection = new MySqlConnection("server=localhost;user id=root;database=buakoi");
         MySqlCommand command;
         MySqlDataReader mdr;
 
