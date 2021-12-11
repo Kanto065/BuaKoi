@@ -17,7 +17,7 @@ namespace BuaDaw
     
             public static string passEmail;
 
-        MySqlConnection connection = new MySqlConnection("server=localhost;user id=root;database=buakoiprotik");
+        MySqlConnection connection = new MySqlConnection("server=localhost;user id=root;database=buakoi");
         MySqlCommand command;
         MySqlDataReader mdr;
 
