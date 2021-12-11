@@ -33,21 +33,16 @@ namespace BuaDaw
             this.BackToAdminHome = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.MaidName = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.maidIdTextbox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.UserIDtextBox = new System.Windows.Forms.TextBox();
-            this.hiringSearchButton = new System.Windows.Forms.Button();
+            this.hiringSearchTxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(313, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 144);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(689, 471);
+            this.dataGridView1.Size = new System.Drawing.Size(990, 431);
             this.dataGridView1.TabIndex = 0;
             // 
             // BackToAdminHome
@@ -69,7 +64,7 @@ namespace BuaDaw
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 80);
+            this.label2.Location = new System.Drawing.Point(12, 61);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 34);
             this.label2.TabIndex = 64;
@@ -79,68 +74,19 @@ namespace BuaDaw
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 131);
+            this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(242, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 15);
+            this.label1.Size = new System.Drawing.Size(67, 28);
             this.label1.TabIndex = 67;
-            this.label1.Text = "Maid name";
+            this.label1.Text = "search";
             // 
-            // MaidName
+            // hiringSearchTxt
             // 
-            this.MaidName.Location = new System.Drawing.Point(18, 149);
-            this.MaidName.Name = "MaidName";
-            this.MaidName.Size = new System.Drawing.Size(212, 31);
-            this.MaidName.TabIndex = 66;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 15);
-            this.label3.TabIndex = 69;
-            this.label3.Text = "Maid Id";
-            // 
-            // maidIdTextbox
-            // 
-            this.maidIdTextbox.Location = new System.Drawing.Point(18, 213);
-            this.maidIdTextbox.Name = "maidIdTextbox";
-            this.maidIdTextbox.Size = new System.Drawing.Size(212, 31);
-            this.maidIdTextbox.TabIndex = 68;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 260);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 15);
-            this.label4.TabIndex = 71;
-            this.label4.Text = "User Id";
-            // 
-            // UserIDtextBox
-            // 
-            this.UserIDtextBox.Location = new System.Drawing.Point(21, 278);
-            this.UserIDtextBox.Name = "UserIDtextBox";
-            this.UserIDtextBox.Size = new System.Drawing.Size(212, 31);
-            this.UserIDtextBox.TabIndex = 70;
-            // 
-            // hiringSearchButton
-            // 
-            this.hiringSearchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.hiringSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hiringSearchButton.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hiringSearchButton.ForeColor = System.Drawing.Color.White;
-            this.hiringSearchButton.Location = new System.Drawing.Point(21, 335);
-            this.hiringSearchButton.Name = "hiringSearchButton";
-            this.hiringSearchButton.Size = new System.Drawing.Size(103, 46);
-            this.hiringSearchButton.TabIndex = 72;
-            this.hiringSearchButton.Text = "Search";
-            this.hiringSearchButton.UseVisualStyleBackColor = false;
+            this.hiringSearchTxt.Location = new System.Drawing.Point(315, 107);
+            this.hiringSearchTxt.Name = "hiringSearchTxt";
+            this.hiringSearchTxt.Size = new System.Drawing.Size(305, 31);
+            this.hiringSearchTxt.TabIndex = 66;
             // 
             // ViewHiringStatus
             // 
@@ -148,13 +94,8 @@ namespace BuaDaw
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.hiringSearchButton);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.UserIDtextBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.maidIdTextbox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.MaidName);
+            this.Controls.Add(this.hiringSearchTxt);
             this.Controls.Add(this.BackToAdminHome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
@@ -175,11 +116,6 @@ namespace BuaDaw
         private System.Windows.Forms.LinkLabel BackToAdminHome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox MaidName;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox maidIdTextbox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox UserIDtextBox;
-        private System.Windows.Forms.Button hiringSearchButton;
+        private System.Windows.Forms.TextBox hiringSearchTxt;
     }
 }
