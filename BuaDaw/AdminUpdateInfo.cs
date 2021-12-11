@@ -47,7 +47,7 @@ namespace BuaDaw
             DataTable table = new DataTable();
             try
             {
-                string email = LogIn.getEmail;
+                string email = LogIn.adminEmail;
                 string sql = "SELECT * FROM admin where email= '" + email + "';";
                 MySqlCommand command = new MySqlCommand(sql, connection);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(command);
@@ -88,7 +88,6 @@ namespace BuaDaw
                 {
                     MessageBox.Show("Entry Successful");
                     
-
                 }
                 DataTable table = selectData();
                 dataGridView1.DataSource = table;

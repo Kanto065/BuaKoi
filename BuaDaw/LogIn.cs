@@ -89,7 +89,7 @@ namespace BuaDaw
             if (mdr.Read())
             {
                 //MessageBox.Show("Login Successful!");
-                
+                userEmail = (email.Text).ToString();
                 UserHome userHome = new UserHome();
                 userHome.Tag = this;
                 userHome.Show(this);
@@ -130,7 +130,7 @@ namespace BuaDaw
 
         }
 
-        public static string getEmail;
+        public static string adminEmail, userEmail;
         
 
         public void AdminLogInButton_Click(object sender, EventArgs e)
@@ -142,7 +142,7 @@ namespace BuaDaw
             if (mdr.Read())
             {
                 //MessageBox.Show("Login Successful!");
-                getEmail = (email.Text).ToString();
+                adminEmail = (email.Text).ToString();
 
                 AdminHome adminHome = new AdminHome();
                 adminHome.Tag = this;
