@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL.Entities;
+using DAL.Tables;
 
 namespace BuaDaw
 {
@@ -22,6 +24,14 @@ namespace BuaDaw
             var adminHome = (AdminHome)Tag;
             adminHome.Show();
             this.Close();
+        }
+        //AdminData maidData = new AdminData();
+        //MaidDatatable maidDatatable = new MaidDatatable();
+
+        private void AdminUpdateInfo_Load(object sender, EventArgs e)
+        {
+            //DataTable table = adminDatatable.selectData();
+            //dataGridView1.DataSource = table;
         }
     }
 }

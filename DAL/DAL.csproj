@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="Conncetion.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="Entities\AdminData.cs" />
     <Compile Include="Entities\MaidData.cs" />
     <Compile Include="Entities\RegisterData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\AdminDatatable.cs" />
     <Compile Include="Tables\MaidDatatable.cs" />
     <Compile Include="Tables\RegisterDatatable.cs" />
   </ItemGroup>

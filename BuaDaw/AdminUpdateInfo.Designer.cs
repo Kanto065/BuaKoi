@@ -163,6 +163,7 @@ namespace BuaDaw
             this.Name = "AdminUpdateInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminUpdateInfo";
+            this.Load += new System.EventHandler(this.AdminUpdateInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
