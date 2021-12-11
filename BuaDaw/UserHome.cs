@@ -70,7 +70,7 @@ namespace BuaDaw
             //string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=buakoi;";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             databaseConnection.Open();
-            string iquery = "SELECT * FROM buakoi.hiringstatus WHERE MaidID = '" + txtHireMaidID.Text + "';";
+            string iquery = "SELECT * FROM buakoiprotik.hiringstatus WHERE MaidID = '" + txtHireMaidID.Text + "';";
 
             MySqlCommand commandDatabase = new MySqlCommand(iquery, databaseConnection);
             //commandDatabase.CommandTimeout = 60;   
@@ -91,7 +91,7 @@ namespace BuaDaw
 
             MySqlConnection databaseConnection4 = new MySqlConnection(connectionString);
             databaseConnection4.Open();
-            string iquery4 = "SELECT * FROM buakoi.maidinfo WHERE MaidID = '" + txtHireMaidID + "';";
+            string iquery4 = "SELECT * FROM buakoiprotik.maidinfo WHERE MaidID = '" + txtHireMaidID + "';";
 
             MySqlCommand commandDatabase4 = new MySqlCommand(iquery4, databaseConnection4);
             MySqlDataReader myReader4 = commandDatabase4.ExecuteReader();
@@ -108,7 +108,7 @@ namespace BuaDaw
                 //userid
                 MySqlConnection databaseConnection2 = new MySqlConnection(connectionString);
                 databaseConnection2.Open();
-                string iquery2 = "SELECT * FROM buakoi.userinfo WHERE Email = '" + temp + "';";
+                string iquery2 = "SELECT * FROM buakoiprotik.userinfo WHERE Email = '" + temp + "';";
 
                 MySqlCommand commandDatabase2 = new MySqlCommand(iquery2, databaseConnection2);
                 MySqlDataReader myReader2 = commandDatabase2.ExecuteReader();
@@ -125,7 +125,7 @@ namespace BuaDaw
 
                 //string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=buakoi;";
                 //string iquery = "INSERT INTO hiringstatus(`MaidID`,`AdminID`,`UserID`,`HiringStatus`,`DoB`,`Gender`,`PhoneNumber`) VALUES ('" + email.Text + "','" + password.Text + "', '" + fname.Text + "', '" + lname.Text + "', '" + datetime.Text + "', '" + gender.Text + "', '" + phone.Text + "')";
-                string iquery1 = "INSERT INTO buakoi.hiringstatus(`MaidID`,`UserID`,`HiringStatus`) VALUES ('" + txtHireMaidID.Text + "','" + userID + "', '" + 1 + "')";
+                string iquery1 = "INSERT INTO buakoiprotik.hiringstatus(`MaidID`,`UserID`,`HiringStatus`) VALUES ('" + txtHireMaidID.Text + "','" + userID + "', '" + 1 + "')";
 
                 MySqlConnection databaseConnection1 = new MySqlConnection(connectionString);
                 MySqlCommand commandDatabase1 = new MySqlCommand(iquery1, databaseConnection1);
@@ -163,7 +163,7 @@ namespace BuaDaw
 
             MySqlConnection databaseConnection3 = new MySqlConnection(connectionString);
             databaseConnection3.Open();
-            string iquery3 = "SELECT * FROM buakoi.userinfo WHERE Email = '" + temp + "';";
+            string iquery3 = "SELECT * FROM buakoiprotik.userinfo WHERE Email = '" + temp + "';";
 
             MySqlCommand commandDatabase3 = new MySqlCommand(iquery3, databaseConnection3);
             MySqlDataReader myReader3 = commandDatabase3.ExecuteReader();
@@ -180,7 +180,7 @@ namespace BuaDaw
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM buakoi.maidinfo", conn);
+                MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM buakoiprotik.maidinfo", conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
 

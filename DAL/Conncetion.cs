@@ -8,6 +8,6 @@ namespace DAL
 {
     class Conncetion
     {
-        public static string conncetionString = "server=localhost;user id=root;database=buakoi";
+        public static string conncetionString = "server=localhost;user id=root;database=buakoiprotik";
     }
 }

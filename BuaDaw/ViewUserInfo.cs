@@ -51,5 +51,10 @@ namespace BuaDaw
             DataTable table = registerDatatable.selectData2();
             dataGridView1.DataSource = table;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
