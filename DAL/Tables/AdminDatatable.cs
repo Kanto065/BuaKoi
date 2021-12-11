@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace DAL.Tables
 {
-    class AdminDatatable
+    public class AdminDatatable
     {
         MySqlConnection connection = new MySqlConnection(Conncetion.conncetionString);
 
@@ -19,7 +19,7 @@ namespace DAL.Tables
             DataTable table = new DataTable();
             try
             {
-                string sql = "SELECT * FROM admin";
+                string sql = "SELECT * FROM admin ";
                 MySqlCommand command = new MySqlCommand(sql, connection);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                 connection.Open();
@@ -36,16 +36,22 @@ namespace DAL.Tables
             return table;
         }
 
+        
+
+        
+
         public bool Update(AdminData admin)  //update
         {
             try
             {
-
-                string sql = "UPDATE admin SET FullName=@FullName,Email=@Email,Password=@Password, WHERE AdminID=@AdminID";
+                //WHERE AdminID=@AdminID
+                string sql = "UPDATE admin SET FullName=@FullName,Email=@Email,Password=@Password WHERE AdminID=@AdminID ";
                 MySqlCommand command = new MySqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@FullName", admin.FullName);
-                command.Parameters.AddWithValue("@MaidID", admin.Password);
-                command.Parameters.AddWithValue("@DoB", admin.Email);
+                command.Parameters.AddWithValue("@Password", admin.Password);
+                command.Parameters.AddWithValue("@Email", admin.Email);
+                command.Parameters.AddWithValue("@AdminID", admin.AdminID);
+
                 connection.Open();
                 command.ExecuteNonQuery();
 

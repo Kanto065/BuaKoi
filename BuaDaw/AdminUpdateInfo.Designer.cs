@@ -33,12 +33,14 @@ namespace BuaDaw
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.password = new System.Windows.Forms.TextBox();
+            this.pass = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.fname = new System.Windows.Forms.TextBox();
+            this.adminid = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,12 +50,13 @@ namespace BuaDaw
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(15, 319);
+            this.button4.Location = new System.Drawing.Point(17, 368);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 46);
             this.button4.TabIndex = 86;
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // linkLabel2
             // 
@@ -83,17 +86,18 @@ namespace BuaDaw
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(301, 133);
+            this.dataGridView1.Location = new System.Drawing.Point(301, 151);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(672, 202);
+            this.dataGridView1.Size = new System.Drawing.Size(672, 149);
             this.dataGridView1.TabIndex = 83;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
-            // password
+            // pass
             // 
-            this.password.Location = new System.Drawing.Point(15, 269);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(213, 31);
-            this.password.TabIndex = 80;
+            this.pass.Location = new System.Drawing.Point(15, 269);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(213, 31);
+            this.pass.TabIndex = 80;
             // 
             // label11
             // 
@@ -142,17 +146,37 @@ namespace BuaDaw
             this.fname.Size = new System.Drawing.Size(212, 31);
             this.fname.TabIndex = 65;
             // 
+            // adminid
+            // 
+            this.adminid.Location = new System.Drawing.Point(17, 331);
+            this.adminid.Name = "adminid";
+            this.adminid.Size = new System.Drawing.Size(213, 31);
+            this.adminid.TabIndex = 88;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 306);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 22);
+            this.label3.TabIndex = 87;
+            this.label3.Text = "Admin id";
+            // 
             // AdminUpdateInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
+            this.Controls.Add(this.adminid);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.password);
+            this.Controls.Add(this.pass);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.email);
@@ -176,11 +200,13 @@ namespace BuaDaw
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox pass;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox fname;
+        private System.Windows.Forms.TextBox adminid;
+        private System.Windows.Forms.Label label3;
     }
 }

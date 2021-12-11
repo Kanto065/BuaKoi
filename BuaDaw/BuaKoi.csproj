@@ -65,6 +65,7 @@
     <Compile Include="forgottenPassword.Designer.cs">
       <DependentUpon>forgottenPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="getInfo.cs" />
     <Compile Include="ResetPassword.cs">
       <SubType>Form</SubType>
     </Compile>

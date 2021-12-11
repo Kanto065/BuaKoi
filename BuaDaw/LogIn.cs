@@ -39,10 +39,10 @@ namespace BuaDaw
 
         private void password_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(password.Text) == true)
+            if (string.IsNullOrEmpty(pass.Text) == true)
             {
-                password.Focus();
-                errorProvider2.SetError(this.password, "Please enter password");
+                pass.Focus();
+                errorProvider2.SetError(this.pass, "Please enter password");
 
             }
             else
@@ -73,12 +73,17 @@ namespace BuaDaw
         {
 
         }
-        
+        public void reset()   //reset function
+        {
+            email.Text = "";
+            pass.Text = "";
+        }
+
 
         private void GetStarted_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string selectQuery = "SELECT * FROM buakoi.userinfo WHERE Email = '" + email.Text + "' AND Password = '" + password.Text + "';";
+            string selectQuery = "SELECT * FROM userinfo WHERE Email = '" + email.Text + "' AND Password = '" + pass.Text + "';";
             command = new MySqlCommand(selectQuery, connection);
             mdr = command.ExecuteReader();
             if (mdr.Read())
@@ -97,10 +102,11 @@ namespace BuaDaw
 
             connection.Close();
 
-            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(password.Text))
+            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(pass.Text))
             {
                 MessageBox.Show("Please input Username and Password", "Error");
             }
+            reset();
 
 
         }
@@ -124,15 +130,19 @@ namespace BuaDaw
 
         }
 
-        private void AdminLogInButton_Click(object sender, EventArgs e)
+        public static string getEmail;
+        
+
+        public void AdminLogInButton_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string selectQuery = "SELECT * FROM buakoi.admin WHERE Email = '" + email.Text + "' AND Password = '" + password.Text + "';";
+            string selectQuery = "SELECT * FROM admin WHERE Email = '" + email.Text + "' AND Password = '" + pass.Text + "';";
             command = new MySqlCommand(selectQuery, connection);
             mdr = command.ExecuteReader();
             if (mdr.Read())
             {
                 //MessageBox.Show("Login Successful!");
+                getEmail = (email.Text).ToString();
 
                 AdminHome adminHome = new AdminHome();
                 adminHome.Tag = this;
@@ -146,10 +156,11 @@ namespace BuaDaw
 
             connection.Close();
 
-            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(password.Text))
+            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(pass.Text))
             {
                 MessageBox.Show("Please input Username and Password", "Error");
             }
+            reset();
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

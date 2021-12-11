@@ -33,9 +33,6 @@ namespace BuaDaw
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.UpdateInfoButton = new System.Windows.Forms.Button();
             this.ViewUserInfo = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
@@ -74,7 +71,7 @@ namespace BuaDaw
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(454, 129);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(818, 399);
+            this.dataGridView1.Size = new System.Drawing.Size(818, 499);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
@@ -84,7 +81,7 @@ namespace BuaDaw
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(107, 9);
+            this.label1.Location = new System.Drawing.Point(105, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 37);
             this.label1.TabIndex = 6;
@@ -95,49 +92,15 @@ namespace BuaDaw
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 9);
+            this.label2.Location = new System.Drawing.Point(45, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 37);
             this.label2.TabIndex = 5;
             this.label2.Text = "Hello!";
             // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(16, 582);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox5.Size = new System.Drawing.Size(466, 76);
-            this.textBox5.TabIndex = 42;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 553);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 26);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "📢Post announcement";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(16, 674);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(103, 46);
-            this.button6.TabIndex = 44;
-            this.button6.Text = "Post";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // UpdateInfoButton
             // 
-            this.UpdateInfoButton.Location = new System.Drawing.Point(1080, 9);
+            this.UpdateInfoButton.Location = new System.Drawing.Point(1080, 23);
             this.UpdateInfoButton.Name = "UpdateInfoButton";
             this.UpdateInfoButton.Size = new System.Drawing.Size(118, 41);
             this.UpdateInfoButton.TabIndex = 46;
@@ -151,7 +114,7 @@ namespace BuaDaw
             this.ViewUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewUserInfo.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewUserInfo.ForeColor = System.Drawing.Color.White;
-            this.ViewUserInfo.Location = new System.Drawing.Point(495, 582);
+            this.ViewUserInfo.Location = new System.Drawing.Point(19, 582);
             this.ViewUserInfo.Name = "ViewUserInfo";
             this.ViewUserInfo.Size = new System.Drawing.Size(195, 46);
             this.ViewUserInfo.TabIndex = 47;
@@ -176,7 +139,7 @@ namespace BuaDaw
             this.ViewHiringStatusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewHiringStatusButton.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewHiringStatusButton.ForeColor = System.Drawing.Color.White;
-            this.ViewHiringStatusButton.Location = new System.Drawing.Point(722, 582);
+            this.ViewHiringStatusButton.Location = new System.Drawing.Point(220, 582);
             this.ViewHiringStatusButton.Name = "ViewHiringStatusButton";
             this.ViewHiringStatusButton.Size = new System.Drawing.Size(201, 46);
             this.ViewHiringStatusButton.TabIndex = 49;
@@ -188,7 +151,7 @@ namespace BuaDaw
             // 
             this.AdminLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.BackgroundImage")));
             this.AdminLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 9);
+            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 23);
             this.AdminLogOutButton.Name = "AdminLogOutButton";
             this.AdminLogOutButton.Size = new System.Drawing.Size(46, 41);
             this.AdminLogOutButton.TabIndex = 7;
@@ -452,7 +415,7 @@ namespace BuaDaw
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1284, 761);
+            this.ClientSize = new System.Drawing.Size(1284, 687);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.label21);
@@ -483,9 +446,6 @@ namespace BuaDaw
             this.Controls.Add(this.label19);
             this.Controls.Add(this.ViewUserInfo);
             this.Controls.Add(this.UpdateInfoButton);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.AdminLogOutButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -507,9 +467,6 @@ namespace BuaDaw
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button AdminLogOutButton;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button UpdateInfoButton;
         private System.Windows.Forms.Button ViewUserInfo;
         private System.Windows.Forms.Label label19;

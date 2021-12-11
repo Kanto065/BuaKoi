@@ -33,9 +33,7 @@ namespace BuaDaw
             this.label2 = new System.Windows.Forms.Label();
             this.Register = new System.Windows.Forms.LinkLabel();
             this.email = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pass = new System.Windows.Forms.TextBox();
             this.UserLogInButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +45,6 @@ namespace BuaDaw
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.AdminLogInButton = new System.Windows.Forms.Button();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -88,39 +85,15 @@ namespace BuaDaw
             this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
             this.email.Leave += new System.EventHandler(this.email_Leave);
             // 
-            // password
+            // pass
             // 
-            this.password.Location = new System.Drawing.Point(119, 245);
-            this.password.Name = "password";
-            this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(241, 26);
-            this.password.TabIndex = 6;
-            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
-            this.password.Leave += new System.EventHandler(this.password_Leave);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(119, 278);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(96, 26);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "I accept all ";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(200, 279);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(145, 22);
-            this.linkLabel1.TabIndex = 8;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Tearm\'s and condition.";
+            this.pass.Location = new System.Drawing.Point(119, 245);
+            this.pass.Name = "pass";
+            this.pass.PasswordChar = '*';
+            this.pass.Size = new System.Drawing.Size(241, 26);
+            this.pass.TabIndex = 6;
+            this.pass.TextChanged += new System.EventHandler(this.password_TextChanged);
+            this.pass.Leave += new System.EventHandler(this.password_Leave);
             // 
             // UserLogInButton
             // 
@@ -128,7 +101,7 @@ namespace BuaDaw
             this.UserLogInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UserLogInButton.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserLogInButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UserLogInButton.Location = new System.Drawing.Point(119, 310);
+            this.UserLogInButton.Location = new System.Drawing.Point(119, 291);
             this.UserLogInButton.Name = "UserLogInButton";
             this.UserLogInButton.Size = new System.Drawing.Size(241, 42);
             this.UserLogInButton.TabIndex = 9;
@@ -236,27 +209,13 @@ namespace BuaDaw
             this.AdminLogInButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AdminLogInButton.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLogInButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AdminLogInButton.Location = new System.Drawing.Point(119, 358);
+            this.AdminLogInButton.Location = new System.Drawing.Point(119, 339);
             this.AdminLogInButton.Name = "AdminLogInButton";
             this.AdminLogInButton.Size = new System.Drawing.Size(241, 42);
             this.AdminLogInButton.TabIndex = 17;
             this.AdminLogInButton.Text = "Log in as Admin";
             this.AdminLogInButton.UseVisualStyleBackColor = false;
             this.AdminLogInButton.Click += new System.EventHandler(this.AdminLogInButton_Click);
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel5.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel5.Location = new System.Drawing.Point(212, 415);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(148, 23);
-            this.linkLabel5.TabIndex = 18;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Forgotten password?";
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // pictureBox1
             // 
@@ -275,7 +234,6 @@ namespace BuaDaw
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
-            this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.AdminLogInButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel3);
@@ -285,9 +243,7 @@ namespace BuaDaw
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.UserLogInButton);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.password);
+            this.Controls.Add(this.pass);
             this.Controls.Add(this.email);
             this.Controls.Add(this.Register);
             this.Controls.Add(this.label2);
@@ -312,9 +268,7 @@ namespace BuaDaw
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel Register;
         private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.TextBox pass;
         private System.Windows.Forms.Button UserLogInButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -326,6 +280,5 @@ namespace BuaDaw
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.Button AdminLogInButton;
-        private System.Windows.Forms.LinkLabel linkLabel5;
     }
 }

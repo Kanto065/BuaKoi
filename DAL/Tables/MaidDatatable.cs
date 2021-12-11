@@ -48,12 +48,13 @@ namespace DAL.Tables
             }
             return true;
         }
-
+        
         public DataTable selectData()   //select data from database
         {
             DataTable table = new DataTable();
             try
             {
+                
                 string sql = "SELECT * FROM maidinfo";
                 MySqlCommand command = new MySqlCommand(sql, connection);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(command);
