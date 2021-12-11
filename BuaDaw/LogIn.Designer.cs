@@ -58,10 +58,10 @@ namespace BuaDaw
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(114, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 25);
+            this.label2.Size = new System.Drawing.Size(74, 36);
             this.label2.TabIndex = 3;
             this.label2.Text = "Log in";
             // 
@@ -69,11 +69,11 @@ namespace BuaDaw
             // 
             this.Register.ActiveLinkColor = System.Drawing.Color.Blue;
             this.Register.AutoSize = true;
-            this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Register.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Register.LinkColor = System.Drawing.Color.Black;
             this.Register.Location = new System.Drawing.Point(266, 111);
             this.Register.Name = "Register";
-            this.Register.Size = new System.Drawing.Size(83, 25);
+            this.Register.Size = new System.Drawing.Size(94, 36);
             this.Register.TabIndex = 4;
             this.Register.TabStop = true;
             this.Register.Text = "Register";
@@ -101,10 +101,10 @@ namespace BuaDaw
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(119, 278);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(87, 19);
+            this.checkBox1.Size = new System.Drawing.Size(96, 26);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "I accept all ";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -113,11 +113,11 @@ namespace BuaDaw
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(200, 279);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(132, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(145, 22);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Tearm\'s and condition.";
@@ -126,7 +126,7 @@ namespace BuaDaw
             // 
             this.UserLogInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
             this.UserLogInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserLogInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLogInButton.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserLogInButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.UserLogInButton.Location = new System.Drawing.Point(119, 310);
             this.UserLogInButton.Name = "UserLogInButton";
@@ -140,10 +140,10 @@ namespace BuaDaw
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(116, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.Size = new System.Drawing.Size(45, 22);
             this.label1.TabIndex = 10;
             this.label1.Text = "Email ";
             // 
@@ -151,10 +151,10 @@ namespace BuaDaw
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(116, 227);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 15);
+            this.label3.Size = new System.Drawing.Size(67, 22);
             this.label3.TabIndex = 11;
             this.label3.Text = "Password";
             // 
@@ -162,11 +162,11 @@ namespace BuaDaw
             // 
             this.BackToLandingPage.ActiveLinkColor = System.Drawing.Color.Blue;
             this.BackToLandingPage.AutoSize = true;
-            this.BackToLandingPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToLandingPage.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackToLandingPage.LinkColor = System.Drawing.Color.Black;
             this.BackToLandingPage.Location = new System.Drawing.Point(116, 74);
             this.BackToLandingPage.Name = "BackToLandingPage";
-            this.BackToLandingPage.Size = new System.Drawing.Size(51, 17);
+            this.BackToLandingPage.Size = new System.Drawing.Size(52, 23);
             this.BackToLandingPage.TabIndex = 12;
             this.BackToLandingPage.TabStop = true;
             this.BackToLandingPage.Text = "< Back";
@@ -176,10 +176,10 @@ namespace BuaDaw
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(43, 608);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 15);
+            this.label4.Size = new System.Drawing.Size(164, 22);
             this.label4.TabIndex = 16;
             this.label4.Text = "©️ All rights reserved - 2021";
             // 
@@ -187,11 +187,11 @@ namespace BuaDaw
             // 
             this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Blue;
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.Black;
             this.linkLabel3.Location = new System.Drawing.Point(241, 583);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(118, 17);
+            this.linkLabel3.Size = new System.Drawing.Size(124, 23);
             this.linkLabel3.TabIndex = 15;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "about developers";
@@ -200,11 +200,11 @@ namespace BuaDaw
             // 
             this.TAC.ActiveLinkColor = System.Drawing.Color.Blue;
             this.TAC.AutoSize = true;
-            this.TAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TAC.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TAC.LinkColor = System.Drawing.Color.Black;
             this.TAC.Location = new System.Drawing.Point(96, 583);
             this.TAC.Name = "TAC";
-            this.TAC.Size = new System.Drawing.Size(139, 17);
+            this.TAC.Size = new System.Drawing.Size(147, 23);
             this.TAC.TabIndex = 14;
             this.TAC.TabStop = true;
             this.TAC.Text = "terms and conditions";
@@ -213,11 +213,11 @@ namespace BuaDaw
             // 
             this.linkLabel4.ActiveLinkColor = System.Drawing.Color.Blue;
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.Black;
             this.linkLabel4.Location = new System.Drawing.Point(42, 583);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(46, 17);
+            this.linkLabel4.Size = new System.Drawing.Size(45, 23);
             this.linkLabel4.TabIndex = 13;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "FAQ\'s";
@@ -256,6 +256,7 @@ namespace BuaDaw
             this.linkLabel5.TabIndex = 18;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "Forgotten password?";
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // pictureBox1
             // 

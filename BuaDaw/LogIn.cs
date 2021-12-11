@@ -151,5 +151,13 @@ namespace BuaDaw
                 MessageBox.Show("Please input Username and Password", "Error");
             }
         }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            forgottenPassword forgottenPassword = new forgottenPassword();
+            forgottenPassword.Tag = this;
+            forgottenPassword.Show(this);
+            //this.Hide();
+        }
     }
 }

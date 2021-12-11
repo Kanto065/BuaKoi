@@ -133,20 +133,7 @@ namespace BuaDaw
             female.Checked = false;
             other.Checked = false;
         }
-
-        
-
-        /*private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            int rowIndex = e.RowIndex;
-            Mfname.Text = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
-            TextmWorkTIme.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
-            TextMaidID.Text = dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
-            TextmWorkExperience.Text = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
-            TextmWorkLocation.Text = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
-            Textphone.Text = dataGridView1.Rows[rowIndex].Cells[8].Value.ToString();
-            TextSalary.Text = dataGridView1.Rows[rowIndex].Cells[9].Value.ToString();
-        }*/
+   
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
