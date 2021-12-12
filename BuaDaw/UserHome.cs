@@ -121,11 +121,11 @@ namespace BuaDaw
                 }
 
                 
-                int userID = Int32.Parse(hsts2);
+                //int userID = Int32.Parse(hsts2);
 
                 //string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=buakoi;";
                 //string iquery = "INSERT INTO hiringstatus(`MaidID`,`AdminID`,`UserID`,`HiringStatus`,`DoB`,`Gender`,`PhoneNumber`) VALUES ('" + email.Text + "','" + password.Text + "', '" + fname.Text + "', '" + lname.Text + "', '" + datetime.Text + "', '" + gender.Text + "', '" + phone.Text + "')";
-                string iquery1 = "INSERT INTO buakoiprotik.hiringstatus(`MaidID`,`UserID`,`HiringStatus`) VALUES ('" + txtHireMaidID.Text + "','" + userID + "', '" + 1 + "')";
+                string iquery1 = "INSERT INTO buakoiprotik.hiringstatus(`MaidID`,`HiringStatus`) VALUES ('" + txtHireMaidID.Text + "','" + 1 + "')";
 
                 MySqlConnection databaseConnection1 = new MySqlConnection(connectionString);
                 MySqlCommand commandDatabase1 = new MySqlCommand(iquery1, databaseConnection1);

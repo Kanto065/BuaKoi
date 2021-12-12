@@ -253,16 +253,20 @@ namespace BuaDaw
                 maidData.PhoneNumber = Textphone.Text;
                 maidData.WorkAddress = TextmWorkLocation.Text;
 
+
+
                 maidData.WorkTime = TextmWorkTIme.Text;
                 maidData.WorkExperience = TextmWorkExperience.Text;
                 /*try
                 {
-                    maidData.MaidID = int.Parse(TextMaidID.Text);
+                maidData.MaidID = int.Parse(TextMaidID.Text);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
                 }*/
+
+
 
                 if (male.Checked)
                 {
@@ -277,15 +281,21 @@ namespace BuaDaw
                     maidData.Gender = "Other";
                 }
 
+
+
                 if (maidDatatable.Add(maidData))
                 {
                     MessageBox.Show("Entry Successful");
                     //changes done
 
+
+
                 }
                 DataTable table = maidDatatable.selectData();
                 dataGridView1.DataSource = table;
                 reset();
+
+
 
             }
             else
