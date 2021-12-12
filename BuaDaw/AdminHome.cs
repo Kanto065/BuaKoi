@@ -242,5 +242,56 @@ namespace BuaDaw
             this.Close();
             System.Windows.Forms.Application.Exit();
         }
+
+        private void Add_Click_1(object sender, EventArgs e)
+        {
+            if (Mfname.Text != "" && dateTimePicker1.Value != null && TextSalary.Text != "" && Textphone.Text != "" && TextmWorkLocation.Text != "" && TextmWorkTIme.Text != "" && TextmWorkExperience.Text != "")
+            {
+                maidData.FullName = Mfname.Text;
+                maidData.DoB = dateTimePicker1.Value;
+                maidData.ExpectedSalary = TextSalary.Text;
+                maidData.PhoneNumber = Textphone.Text;
+                maidData.WorkAddress = TextmWorkLocation.Text;
+
+                maidData.WorkTime = TextmWorkTIme.Text;
+                maidData.WorkExperience = TextmWorkExperience.Text;
+                /*try
+                {
+                    maidData.MaidID = int.Parse(TextMaidID.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }*/
+
+                if (male.Checked)
+                {
+                    maidData.Gender = "Male";
+                }
+                else if (female.Checked)
+                {
+                    maidData.Gender = "Female";
+                }
+                else if (other.Checked)
+                {
+                    maidData.Gender = "Other";
+                }
+
+                if (maidDatatable.Add(maidData))
+                {
+                    MessageBox.Show("Entry Successful");
+                    //changes done
+
+                }
+                DataTable table = maidDatatable.selectData();
+                dataGridView1.DataSource = table;
+                reset();
+
+            }
+            else
+            {
+                MessageBox.Show("Please fill all the requirements for adding data");
+            }
+        }
     }
 }

@@ -210,6 +210,7 @@ namespace BuaDaw
             this.Add.TabIndex = 74;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click_1);
             // 
             // other
             // 
