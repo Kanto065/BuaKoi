@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2021 at 04:30 AM
+-- Generation Time: Dec 12, 2021 at 06:02 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`FullName`, `Password`, `Email`, `AdminID`) VALUES
 ('Protik Acharjay', 'protik11', 'protik7777777@gmail.com', 1),
-('a', '1', 'a@gmail.com', 3);
+('a', '12', 'a@gmail.com', 3);
 
 -- --------------------------------------------------------
 
@@ -65,7 +65,7 @@ CREATE TABLE `feedback` (
 
 CREATE TABLE `hiringstatus` (
   `MaidID` int(11) NOT NULL,
-  `UserID` int(11) NOT NULL,
+  `UserID` int(11) DEFAULT NULL,
   `HiringStatus` int(30) NOT NULL DEFAULT 0,
   `HiringID` int(11) NOT NULL,
   `AdminID` int(11) DEFAULT NULL
@@ -76,13 +76,16 @@ CREATE TABLE `hiringstatus` (
 --
 
 INSERT INTO `hiringstatus` (`MaidID`, `UserID`, `HiringStatus`, `HiringID`, `AdminID`) VALUES
-(16, 6, 1, 19, NULL),
-(1, 6, 1, 20, NULL),
-(1, 6, 1, 21, NULL),
-(13, 6, 1, 22, NULL),
-(15, 6, 1, 23, NULL),
-(17, 5, 1, 24, NULL),
-(18, 6, 1, 25, NULL);
+(16, 6, 1, 19, 0),
+(1, 6, 1, 20, 0),
+(1, 6, 1, 21, 0),
+(13, 6, 1, 22, 0),
+(15, 6, 1, 23, 0),
+(17, 5, 1, 24, 0),
+(18, 6, 1, 25, 0),
+(32, NULL, 1, 33, NULL),
+(27, NULL, 1, 34, NULL),
+(26, NULL, 1, 35, NULL);
 
 -- --------------------------------------------------------
 
@@ -110,10 +113,15 @@ CREATE TABLE `maidinfo` (
 INSERT INTO `maidinfo` (`FullName`, `WorkTime`, `MaidID`, `AdminID`, `DOB`, `WorkExperience`, `WorkAddress`, `Gender`, `PhoneNumber`, `ExpectedSalary`) VALUES
 ('Khala', '8-11 am', 1, 1, '2021-12-10 20:11:48.121205', 2, 'Dhaka', 'Female', '01948945165', 2000),
 ('Bua', '1-5 pm', 13, 3, '2021-12-10 20:11:48.121205', 1, 'dhaka', 'Female', '01746555564', 2000),
-('Rahima', '4pm - 10pm', 15, 1, '', 5, 'Khilkhet', 'female', '0167543287', 5000),
-('Khadija', '5pm - 9pm', 16, 3, '', 3, '', 'male', '1234567', 7000),
-('Ramu Kaka', '6am - 12pm', 17, 1, '', 3, 'Rajshahi', 'Male', '01626070395', 12000),
-('Prottoy', '3pm - 6pm', 18, 1, '', 4, 'dhaka', 'male', '12345', 1234);
+('Rahima', '4pm - 10pm', 15, 1, '2021-12-12 13:57:21.248815', 5, 'Khilkhet', 'Female', '0167543287', 5000),
+('Khadija', '5pm - 9pm', 16, 3, '2021-11-28 14:09:50', 3, 'dhaka', 'Female', '1234567', 8000),
+('Ramu Kaka', '6am - 12pm', 17, 1, '2021-12-12 13:57:21.248815', 3, 'Rajshahi', 'Female', '01626070395', 12000),
+('Prottoy', '3pm - 6pm', 18, 1, '2021-11-28 13:57:21', 4, 'dhaka', 'Male', '12345', 1234),
+('manual', '2-5', 24, 3, '', 0, '', '', '', 2000),
+('Bua2', '1-5 pm', 26, 0, '2021-12-12 14:22:12.488062', 1, 'dhaka', 'Female', '01746555564', 3000),
+('Bua3', '1-5 pm', 27, 0, '2021-12-12 14:22:12.488062', 1, 'dhaka', 'Female', '01746555564', 4000),
+('Bua8', '1-5 pm', 30, NULL, '2021-12-12 14:51:10.979103', 1, 'dhaka', 'Female', '01746555564', 4000),
+('Bua27', '1-5 pm', 32, NULL, '2021-12-12 14:58:42.344623', 1, 'dhaka', 'Female', '01746555564', 4000);
 
 -- --------------------------------------------------------
 
@@ -157,7 +165,12 @@ CREATE TABLE `userinfo` (
 INSERT INTO `userinfo` (`FullName`, `DoB`, `Password`, `Gender`, `PhoneNumber`, `Address`, `UserID`, `Email`) VALUES
 ('Partho', '2021-12-01 03:39:27', 'partho1234', 'Gender', '1626070395', NULL, 4, 'parthoshaon@gmail.com'),
 ('Protik Acharjay', '2001-12-11 18:16:19', 'protik11', 'Male', '1798141488', 'Rajshahi', 5, 'protik7777777@gmail.com'),
-('Ratan', '2021-12-09 19:44:18', '1', 'Female', '179814546', 'dhaka', 6, 'a@gmail.com');
+('Ratan', '2021-12-09 19:44:18', '1', 'Female', '179814546', 'dhaka', 6, 'a@gmail.com'),
+('sagor', '2021-11-29 12:18:41', '12345', 'Male', '01634756345', 'dhaka', 7, 'sagor@gmail.com'),
+('kamal', '2021-11-28 12:26:50', '123', 'Male', '01838257832', 'dhaka', 8, 'k@gmail.com'),
+('apurbo', '2012-06-08 13:04:05', '12345', 'Male', '0158372098', 'raipur', 9, 'apurbo@gmail.com'),
+('mazid ', '2021-12-12 15:26:50', '12345', '', '01983478967', 'nikunja-2, Dhaka', 10, 'mazid@aiub.edu'),
+('rikta bhatt', '2021-12-12 16:21:53', 'katha065', '', '01814717355', 'raipur', 11, 'riktabhatt065@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -223,13 +236,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `hiringstatus`
 --
 ALTER TABLE `hiringstatus`
-  MODIFY `HiringID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `HiringID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `maidinfo`
 --
 ALTER TABLE `maidinfo`
-  MODIFY `MaidID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `MaidID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `payment`
@@ -241,7 +254,7 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `userinfo`
 --
 ALTER TABLE `userinfo`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
