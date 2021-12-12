@@ -29,8 +29,8 @@ A C# Project. using windows form and database connectivity
 <br />-> Admin Home form <-
 ![](screenshot/adminhome.jpg)
 
-
-<br />================Supervised by================
+### About Us:
+================Supervised by=================
 <br />Name: MD. MAZID-UL-HAQUE
 <br />Email: mazid@aiub.edu
 <br />Linkedin: https://www.linkedin.com/in/mdmazidulhaque/
