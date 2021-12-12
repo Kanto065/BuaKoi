@@ -216,13 +216,19 @@ namespace BuaDaw
             registerData.Email = email.Text;
             if (registerDatatable.Insert(registerData))
             {
-                UserHome userHome = new UserHome();
-                userHome.Tag = this;
-                userHome.Show(this);
+                LogIn logIn = new LogIn();
+                logIn.Tag = this;
+                logIn.Show(this);
                 this.Hide();
                 //changes done
 
             }
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

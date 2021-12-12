@@ -63,6 +63,7 @@ namespace BuaDaw
             this.Searchbox = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.TextMaidID = new System.Windows.Forms.TextBox();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,11 +82,11 @@ namespace BuaDaw
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 27);
+            this.label1.Location = new System.Drawing.Point(112, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 37);
+            this.label1.Size = new System.Drawing.Size(85, 37);
             this.label1.TabIndex = 6;
-            this.label1.Text = "admin name";
+            this.label1.Text = "admin";
             // 
             // label2
             // 
@@ -100,7 +101,7 @@ namespace BuaDaw
             // 
             // UpdateInfoButton
             // 
-            this.UpdateInfoButton.Location = new System.Drawing.Point(1080, 23);
+            this.UpdateInfoButton.Location = new System.Drawing.Point(1006, 23);
             this.UpdateInfoButton.Name = "UpdateInfoButton";
             this.UpdateInfoButton.Size = new System.Drawing.Size(118, 41);
             this.UpdateInfoButton.TabIndex = 46;
@@ -151,7 +152,7 @@ namespace BuaDaw
             // 
             this.AdminLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.BackgroundImage")));
             this.AdminLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AdminLogOutButton.Location = new System.Drawing.Point(1204, 23);
+            this.AdminLogOutButton.Location = new System.Drawing.Point(1145, 23);
             this.AdminLogOutButton.Name = "AdminLogOutButton";
             this.AdminLogOutButton.Size = new System.Drawing.Size(46, 41);
             this.AdminLogOutButton.TabIndex = 7;
@@ -410,12 +411,24 @@ namespace BuaDaw
             this.TextMaidID.Size = new System.Drawing.Size(184, 31);
             this.TextMaidID.TabIndex = 80;
             // 
+            // close
+            // 
+            this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.Location = new System.Drawing.Point(1210, 23);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(48, 41);
+            this.close.TabIndex = 83;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1284, 687);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.label21);
@@ -496,5 +509,6 @@ namespace BuaDaw
         private System.Windows.Forms.TextBox Searchbox;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox TextMaidID;
+        private System.Windows.Forms.Button close;
     }
 }

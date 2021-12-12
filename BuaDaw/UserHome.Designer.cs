@@ -45,6 +45,7 @@ namespace BuaDaw
             this.btnHireMaid = new System.Windows.Forms.Button();
             this.txtHireMaidID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +63,7 @@ namespace BuaDaw
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.close);
             this.panel1.Controls.Add(this.UserUpdateInfoButton);
             this.panel1.Controls.Add(this.UserLogOutButton);
             this.panel1.Controls.Add(this.label1);
@@ -76,7 +78,7 @@ namespace BuaDaw
             // UserUpdateInfoButton
             // 
             this.UserUpdateInfoButton.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserUpdateInfoButton.Location = new System.Drawing.Point(793, 23);
+            this.UserUpdateInfoButton.Location = new System.Drawing.Point(742, 23);
             this.UserUpdateInfoButton.Name = "UserUpdateInfoButton";
             this.UserUpdateInfoButton.Size = new System.Drawing.Size(118, 41);
             this.UserUpdateInfoButton.TabIndex = 9;
@@ -88,7 +90,7 @@ namespace BuaDaw
             // 
             this.UserLogOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UserLogOutButton.BackgroundImage")));
             this.UserLogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.UserLogOutButton.Location = new System.Drawing.Point(917, 23);
+            this.UserLogOutButton.Location = new System.Drawing.Point(879, 23);
             this.UserLogOutButton.Name = "UserLogOutButton";
             this.UserLogOutButton.Size = new System.Drawing.Size(46, 41);
             this.UserLogOutButton.TabIndex = 8;
@@ -191,6 +193,17 @@ namespace BuaDaw
             this.label5.Text = "Enter Maid ID";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // close
+            // 
+            this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.Location = new System.Drawing.Point(950, 23);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(52, 37);
+            this.close.TabIndex = 19;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // UserHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -233,5 +246,6 @@ namespace BuaDaw
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Button close;
     }
 }

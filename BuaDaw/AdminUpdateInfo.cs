@@ -101,6 +101,12 @@ namespace BuaDaw
             fname.Text = "";
             adminid.Text = "";
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            System.Windows.Forms.Application.Exit();
+        }
     }
 
 }

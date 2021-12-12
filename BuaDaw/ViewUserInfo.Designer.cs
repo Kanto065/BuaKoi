@@ -34,6 +34,7 @@ namespace BuaDaw
             this.searchboxx = new System.Windows.Forms.TextBox();
             this.BackToAdminHome = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,12 +92,24 @@ namespace BuaDaw
             this.label2.Text = "user information";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // close
+            // 
+            this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.Location = new System.Drawing.Point(925, 39);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(52, 37);
+            this.close.TabIndex = 69;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // ViewUserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.BackToAdminHome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -121,5 +134,6 @@ namespace BuaDaw
         private System.Windows.Forms.TextBox searchboxx;
         private System.Windows.Forms.LinkLabel BackToAdminHome;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button close;
     }
 }

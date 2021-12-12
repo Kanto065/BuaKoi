@@ -155,6 +155,55 @@ namespace DAL.Tables
 
         }
 
+        public DataTable selectDataHire()   //select data from database
+        {
+            DataTable table = new DataTable();
+            try
+            {
+
+                string sql = "SELECT * FROM hiringstatus";
+                MySqlCommand command = new MySqlCommand(sql, connection);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                connection.Open();
+                adapter.Fill(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return table;
+        }
+
+
+        public DataTable SearchHire(string key)   //search
+        {
+            DataTable table = new DataTable();
+            try
+            {
+                string sql = "SELECT * FROM hiringstatus where MaidID LIKE '%" + key + "%' OR UserID LIKE '%" + key + "%'";
+                MySqlCommand command = new MySqlCommand(sql, connection);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                connection.Open();
+                adapter.Fill(table);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return table;
+
+        }
+
+
 
 
 

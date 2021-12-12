@@ -31,12 +31,9 @@ namespace BuaDaw
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandingPage));
             this.label1 = new System.Windows.Forms.Label();
-            this.FAQ = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.GetStarted = new System.Windows.Forms.Button();
-            this.TAC = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,20 +50,6 @@ namespace BuaDaw
             this.label1.TabIndex = 0;
             this.label1.Text = "This app will help finding maid nearby you.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // FAQ
-            // 
-            this.FAQ.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.FAQ.AutoSize = true;
-            this.FAQ.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FAQ.LinkColor = System.Drawing.Color.Black;
-            this.FAQ.Location = new System.Drawing.Point(42, 576);
-            this.FAQ.Name = "FAQ";
-            this.FAQ.Size = new System.Drawing.Size(48, 25);
-            this.FAQ.TabIndex = 1;
-            this.FAQ.TabStop = true;
-            this.FAQ.Text = "FAQ\'s";
-            this.FAQ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label2
             // 
@@ -104,32 +87,6 @@ namespace BuaDaw
             this.GetStarted.UseVisualStyleBackColor = false;
             this.GetStarted.Click += new System.EventHandler(this.GetStarted_Click);
             // 
-            // TAC
-            // 
-            this.TAC.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.TAC.AutoSize = true;
-            this.TAC.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TAC.LinkColor = System.Drawing.Color.Black;
-            this.TAC.Location = new System.Drawing.Point(96, 576);
-            this.TAC.Name = "TAC";
-            this.TAC.Size = new System.Drawing.Size(159, 25);
-            this.TAC.TabIndex = 6;
-            this.TAC.TabStop = true;
-            this.TAC.Text = "terms and conditions";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(261, 576);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(134, 25);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "about developers";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -160,13 +117,10 @@ namespace BuaDaw
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1014, 641);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.TAC);
             this.Controls.Add(this.GetStarted);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.FAQ);
             this.Controls.Add(this.label1);
             this.Name = "LandingPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -181,13 +135,10 @@ namespace BuaDaw
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel FAQ;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button GetStarted;
-        private System.Windows.Forms.LinkLabel TAC;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label4;
     }
 }

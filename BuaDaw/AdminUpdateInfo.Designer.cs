@@ -41,6 +41,7 @@ namespace BuaDaw
             this.fname = new System.Windows.Forms.TextBox();
             this.adminid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,12 +165,24 @@ namespace BuaDaw
             this.label3.TabIndex = 87;
             this.label3.Text = "Admin id";
             // 
+            // close
+            // 
+            this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.Location = new System.Drawing.Point(938, 34);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(52, 31);
+            this.close.TabIndex = 89;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // AdminUpdateInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.adminid);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
@@ -208,5 +221,6 @@ namespace BuaDaw
         private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.TextBox adminid;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button close;
     }
 }

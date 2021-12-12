@@ -134,7 +134,12 @@ namespace BuaDaw
         }
 
         public static string adminEmail, userEmail;
-        
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            System.Windows.Forms.Application.Exit();
+        }
 
         public void AdminLogInButton_Click(object sender, EventArgs e)
         {
@@ -166,12 +171,6 @@ namespace BuaDaw
             reset();
         }
 
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            forgottenPassword forgottenPassword = new forgottenPassword();
-            forgottenPassword.Tag = this;
-            forgottenPassword.Show(this);
-            //this.Hide();
-        }
+        
     }
 }

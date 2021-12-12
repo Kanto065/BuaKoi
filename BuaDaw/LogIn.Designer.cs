@@ -39,13 +39,11 @@ namespace BuaDaw
             this.label3 = new System.Windows.Forms.Label();
             this.BackToLandingPage = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.TAC = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.AdminLogInButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -156,45 +154,6 @@ namespace BuaDaw
             this.label4.TabIndex = 16;
             this.label4.Text = "©️ All rights reserved - 2021";
             // 
-            // linkLabel3
-            // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel3.Location = new System.Drawing.Point(241, 583);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(124, 23);
-            this.linkLabel3.TabIndex = 15;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "about developers";
-            // 
-            // TAC
-            // 
-            this.TAC.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.TAC.AutoSize = true;
-            this.TAC.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TAC.LinkColor = System.Drawing.Color.Black;
-            this.TAC.Location = new System.Drawing.Point(96, 583);
-            this.TAC.Name = "TAC";
-            this.TAC.Size = new System.Drawing.Size(147, 23);
-            this.TAC.TabIndex = 14;
-            this.TAC.TabStop = true;
-            this.TAC.Text = "terms and conditions";
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel4.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel4.Location = new System.Drawing.Point(42, 583);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(45, 23);
-            this.linkLabel4.TabIndex = 13;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "FAQ\'s";
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -220,7 +179,7 @@ namespace BuaDaw
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BuaDaw.Properties.Resources.log_in;
-            this.pictureBox1.Location = new System.Drawing.Point(467, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(467, 89);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(535, 481);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,17 +187,26 @@ namespace BuaDaw
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // close
+            // 
+            this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.Location = new System.Drawing.Point(950, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(52, 31);
+            this.close.TabIndex = 18;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.AdminLogInButton);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.TAC);
-            this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.BackToLandingPage);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -274,11 +242,9 @@ namespace BuaDaw
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel BackToLandingPage;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel TAC;
-        private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.Button AdminLogInButton;
+        private System.Windows.Forms.Button close;
     }
 }

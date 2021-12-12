@@ -236,5 +236,11 @@ namespace BuaDaw
             Textphone.Text = dataGridView1.Rows[rowIndex].Cells[8].Value.ToString();
             TextSalary.Text = dataGridView1.Rows[rowIndex].Cells[9].Value.ToString();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

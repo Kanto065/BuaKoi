@@ -34,6 +34,7 @@ namespace BuaDaw
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.hiringSearchTxt = new System.Windows.Forms.TextBox();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +88,18 @@ namespace BuaDaw
             this.hiringSearchTxt.Name = "hiringSearchTxt";
             this.hiringSearchTxt.Size = new System.Drawing.Size(305, 31);
             this.hiringSearchTxt.TabIndex = 66;
+            this.hiringSearchTxt.TextChanged += new System.EventHandler(this.hiringSearchTxt_TextChanged);
+            // 
+            // close
+            // 
+            this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.Location = new System.Drawing.Point(950, 35);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(52, 37);
+            this.close.TabIndex = 68;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // ViewHiringStatus
             // 
@@ -94,6 +107,7 @@ namespace BuaDaw
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1014, 641);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.hiringSearchTxt);
             this.Controls.Add(this.BackToAdminHome);
@@ -104,6 +118,7 @@ namespace BuaDaw
             this.Name = "ViewHiringStatus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewHiringStatus";
+            this.Load += new System.EventHandler(this.ViewHiringStatus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,5 +132,6 @@ namespace BuaDaw
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox hiringSearchTxt;
+        private System.Windows.Forms.Button close;
     }
 }
