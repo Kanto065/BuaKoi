@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2021 at 03:04 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- Generation Time: Dec 12, 2021 at 04:30 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `buakoi`
+-- Database: `buakoiprotik`
 --
 
 -- --------------------------------------------------------
@@ -28,17 +28,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `FirstName` varchar(30) NOT NULL,
-  `LastName` varchar(30) NOT NULL,
-  `DoB` datetime NOT NULL,
+  `FullName` varchar(30) NOT NULL,
   `Password` varchar(30) NOT NULL,
   `Email` varchar(30) NOT NULL,
-  `Gender` varchar(10) NOT NULL,
-  `Phone` int(13) NOT NULL,
-  `Address` text NOT NULL,
-  `Photo` longblob NOT NULL,
   `AdminID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`FullName`, `Password`, `Email`, `AdminID`) VALUES
+('Protik Acharjay', 'protik11', 'protik7777777@gmail.com', 1),
+('a', '1', 'a@gmail.com', 3);
 
 -- --------------------------------------------------------
 
@@ -64,10 +66,23 @@ CREATE TABLE `feedback` (
 CREATE TABLE `hiringstatus` (
   `MaidID` int(11) NOT NULL,
   `UserID` int(11) NOT NULL,
-  `HiringStatus` varchar(30) NOT NULL,
+  `HiringStatus` int(30) NOT NULL DEFAULT 0,
   `HiringID` int(11) NOT NULL,
-  `AdminID` int(11) NOT NULL
+  `AdminID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hiringstatus`
+--
+
+INSERT INTO `hiringstatus` (`MaidID`, `UserID`, `HiringStatus`, `HiringID`, `AdminID`) VALUES
+(16, 6, 1, 19, NULL),
+(1, 6, 1, 20, NULL),
+(1, 6, 1, 21, NULL),
+(13, 6, 1, 22, NULL),
+(15, 6, 1, 23, NULL),
+(17, 5, 1, 24, NULL),
+(18, 6, 1, 25, NULL);
 
 -- --------------------------------------------------------
 
@@ -76,13 +91,29 @@ CREATE TABLE `hiringstatus` (
 --
 
 CREATE TABLE `maidinfo` (
-  `FirstName` varchar(30) NOT NULL,
-  `LastName` varchar(30) NOT NULL,
-  `Address` text NOT NULL,
+  `FullName` varchar(30) NOT NULL,
   `WorkTime` varchar(30) NOT NULL,
-  `MaidID` int(11) NOT NULL,
-  `AdminID` int(11) NOT NULL
+  `MaidID` int(10) NOT NULL,
+  `AdminID` int(10) DEFAULT NULL,
+  `DOB` varchar(50) NOT NULL,
+  `WorkExperience` int(10) NOT NULL,
+  `WorkAddress` text NOT NULL,
+  `Gender` varchar(10) NOT NULL,
+  `PhoneNumber` varchar(15) NOT NULL,
+  `ExpectedSalary` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `maidinfo`
+--
+
+INSERT INTO `maidinfo` (`FullName`, `WorkTime`, `MaidID`, `AdminID`, `DOB`, `WorkExperience`, `WorkAddress`, `Gender`, `PhoneNumber`, `ExpectedSalary`) VALUES
+('Khala', '8-11 am', 1, 1, '2021-12-10 20:11:48.121205', 2, 'Dhaka', 'Female', '01948945165', 2000),
+('Bua', '1-5 pm', 13, 3, '2021-12-10 20:11:48.121205', 1, 'dhaka', 'Female', '01746555564', 2000),
+('Rahima', '4pm - 10pm', 15, 1, '', 5, 'Khilkhet', 'female', '0167543287', 5000),
+('Khadija', '5pm - 9pm', 16, 3, '', 3, '', 'male', '1234567', 7000),
+('Ramu Kaka', '6am - 12pm', 17, 1, '', 3, 'Rajshahi', 'Male', '01626070395', 12000),
+('Prottoy', '3pm - 6pm', 18, 1, '', 4, 'dhaka', 'male', '12345', 1234);
 
 -- --------------------------------------------------------
 
@@ -109,14 +140,12 @@ CREATE TABLE `payment` (
 --
 
 CREATE TABLE `userinfo` (
-  `FirstName` varchar(30) NOT NULL,
-  `LastName` varchar(30) NOT NULL,
+  `FullName` varchar(30) NOT NULL,
   `DoB` datetime NOT NULL,
   `Password` varchar(30) NOT NULL,
   `Gender` varchar(10) NOT NULL,
-  `PhoneNumber` int(13) NOT NULL,
+  `PhoneNumber` varchar(15) NOT NULL,
   `Address` text DEFAULT NULL,
-  `Photo` longblob DEFAULT NULL,
   `UserID` int(11) NOT NULL,
   `Email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -125,8 +154,10 @@ CREATE TABLE `userinfo` (
 -- Dumping data for table `userinfo`
 --
 
-INSERT INTO `userinfo` (`FirstName`, `LastName`, `DoB`, `Password`, `Gender`, `PhoneNumber`, `Address`, `Photo`, `UserID`, `Email`) VALUES
-('Partho', 'Roy', '0000-00-00 00:00:00', 'partho1234', 'Gender', 1626070395, NULL, NULL, 4, 'parthoshaon@gmail.com');
+INSERT INTO `userinfo` (`FullName`, `DoB`, `Password`, `Gender`, `PhoneNumber`, `Address`, `UserID`, `Email`) VALUES
+('Partho', '2021-12-01 03:39:27', 'partho1234', 'Gender', '1626070395', NULL, 4, 'parthoshaon@gmail.com'),
+('Protik Acharjay', '2001-12-11 18:16:19', 'protik11', 'Male', '1798141488', 'Rajshahi', 5, 'protik7777777@gmail.com'),
+('Ratan', '2021-12-09 19:44:18', '1', 'Female', '179814546', 'dhaka', 6, 'a@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -186,19 +217,19 @@ ALTER TABLE `userinfo`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `AdminID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `AdminID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `hiringstatus`
 --
 ALTER TABLE `hiringstatus`
-  MODIFY `HiringID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `HiringID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `maidinfo`
 --
 ALTER TABLE `maidinfo`
-  MODIFY `MaidID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `MaidID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `payment`
@@ -210,7 +241,7 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `userinfo`
 --
 ALTER TABLE `userinfo`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
