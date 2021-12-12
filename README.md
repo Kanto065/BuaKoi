@@ -70,5 +70,9 @@ Features:
 
 -> Log in form <-
 ![](screenshot/login.jpg)
--> register form <-
+-> Register form <-
 ![](screenshot/register.jpg)
+-> User Home form <-
+![](screenshot/userhome.jpg)
+-> Admin Home form <-
+![](screenshot/adminhome.jpg)
