@@ -170,7 +170,7 @@ namespace BuaDaw
             this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.close.Location = new System.Drawing.Point(938, 34);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(52, 31);
+            this.close.Size = new System.Drawing.Size(52, 40);
             this.close.TabIndex = 89;
             this.close.Text = "X";
             this.close.UseVisualStyleBackColor = true;

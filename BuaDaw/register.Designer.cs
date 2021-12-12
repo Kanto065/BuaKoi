@@ -319,9 +319,9 @@ namespace BuaDaw
             // close
             // 
             this.close.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.Location = new System.Drawing.Point(929, 29);
+            this.close.Location = new System.Drawing.Point(929, 25);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(52, 31);
+            this.close.Size = new System.Drawing.Size(52, 35);
             this.close.TabIndex = 90;
             this.close.Text = "X";
             this.close.UseVisualStyleBackColor = true;
