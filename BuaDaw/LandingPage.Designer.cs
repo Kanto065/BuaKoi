@@ -36,6 +36,11 @@ namespace BuaDaw
             this.GetStarted = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,9 +51,9 @@ namespace BuaDaw
             this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(41, 234);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 28);
+            this.label1.Size = new System.Drawing.Size(490, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "This app will help finding maid nearby you.";
+            this.label1.Text = "A C# project using windows form and database connection.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -109,6 +114,61 @@ namespace BuaDaw
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(41, 262);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(458, 28);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Maid management system. where admin can add maid";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(41, 290);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(475, 28);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "update maid information, delete and search maid. Admin ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(41, 318);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(488, 28);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "can also update own information. See registerd userlist and ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(41, 346);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(442, 28);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "hired maidlist. User can register and log in. After log in ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(41, 374);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(536, 28);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "user can see maidlist and hire maid. update their own information";
+            // 
             // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,6 +176,11 @@ namespace BuaDaw
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1014, 641);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.GetStarted);
             this.Controls.Add(this.label3);
@@ -140,6 +205,11 @@ namespace BuaDaw
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button GetStarted;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label10;
     }
 }
 
