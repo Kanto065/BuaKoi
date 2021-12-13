@@ -2,11 +2,14 @@
 
 ### Solution Stack -
 ● language-independent 3-tier architecture | Application Layer | OOP Principles
+
 ● Normalized DB (2NF) | Database CRUD
 
 ### Features -
 ● Users can Search/Hire a maid
+
 ● Admin can view Hiring status/Search/Insert/Update/Delete Maid
+
 ● CRUD Operations for both Admin & Users side
 
 <br /><br />
