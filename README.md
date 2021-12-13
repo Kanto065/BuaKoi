@@ -1,21 +1,14 @@
 # BuaKoi
-A C# Project. using windows form and database connectivity
 
+###Solution Stack -
+● language-independent 3-tier architecture | Application Layer | OOP Principles
+● Normalized DB (2NF) | Database CRUD
 
-### Features:
-=>User can view maid list
-<br />=> User can Search maid
-<br />=> User can hire maid
-<br />=> User can update own information
-<br />=> Admin can login
-<br />=> Admin can view made list
-<br />=> Admin can view user list
-<br />=> Insert new maid
-<br />=> Update maid information
-<br />=> Delete maid
-<br />=> Search maid
-<br />=> Can view maid hiring status  
-=> Update admin own information
+###Features -
+● Users can Search/Hire a maid
+● Admin can view Hiring status/Search/Insert/Update/Delete Maid
+● CRUD Operations for both Admin & Users side
+
 <br /><br />
 -> Log in form <-
 ![](screenshot/login.jpg)
