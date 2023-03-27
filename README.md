@@ -1,60 +1,60 @@
-# BuaKoi
-A C# Project. using windows form and database connectivity
+# BuaKoi Maid Service
+## _Effortlessly hire maids with BuaKoi - Your one-stop solution for domestic help._
 
+The BuaKoi Maid Service Management System is a professional and reliable solution for managing maid service hiring processes. The system follows a language-independent 3-tier architecture, adhering to Object-Oriented Programming principles. The database is normalized using the 2NF model and utilizes MySQL for efficient CRUD operations.
 
-### Features:
-=>User can view maid list
-<br />=> User can Search maid
-<br />=> User can hire maid
-<br />=> User can update own information
-<br />=> Admin can login
-<br />=> Admin can view made list
-<br />=> Admin can view user list
-<br />=> Insert new maid
-<br />=> Update maid information
-<br />=> Delete maid
-<br />=> Search maid
-<br />=> Can view maid hiring status  
-=> Update admin own information
+## Features
+- Search and hire maids: Users can easily search and hire maids through the application.
+- Admin dashboard: Admin can view hiring status, search, insert, update, and delete maids using a simple and intuitive dashboard.
+- CRUD operations: Both users and admin have access to CRUD operations (Create, Read, Update, Delete) for maids, allowing for seamless management and organization of data.
+
+## Tech
+- C# programming language
+- .NET Framework 4.7.2
+- Windows Forms for the UI
+- Visual Studio and MSBuild for development and build automation
+- MySQL database
+- Some other standard .NET libraries and dependencies for handling XML, data access, etc.
+
+## Solution Stack
+- Three-tier architecture with language-independent design, utilizing OOP principles at the application layer.
+- Normalized database with 2NF schema, providing CRUD functionality for efficient data management.
 <br /><br />
--> Log in form <-
+
+## Screenshots
+<br />
+
+> Log in form for existing users, where they can enter their credentials to access their account and use the application.
 ![](screenshot/login.jpg)
 
-<br />-> Register form <-
+> Registration form for new users, allowing them to create an account and gain access to the application's features.
 ![](screenshot/register.jpg)
 
-<br />-> User Home form <-
+> User Home form, where users can search and hire maids through the application.
 ![](screenshot/userhome.jpg)
 
-<br />-> Admin Home form <-
+> Admin Home form, where administrators can manage the application and view hiring status for maids.
 ![](screenshot/adminhome.jpg)
 
-### About Us:
-================Supervised by=================
-<br />Name: MD. MAZID-UL-HAQUE
-<br />Email: mazid@aiub.edu
-<br />Linkedin: https://www.linkedin.com/in/mdmazidulhaque/
+## Supervised by
 
-=================Developers==================
-<br />Name: Kanta Bhattacharjee
-<br />Student ID: 2043542-1
-<br />Email: kanto.uv@outlook.com
-<br />Linkedin: https://www.linkedin.com/in/kanta-bhattacharjee/
+<br /> Md. Mazid-ul-Haque
+<br /> mazid@aiub.edu
+<br /> https://www.linkedin.com/in/mdmazidulhaque/
 
+## Developers
 
-Name: Partho Sarothi Roy 
-<br />Student ID: 15-30227-2
-<br />Email: parthoshaon@gmail.com
-<br />Linkedin: https://www.linkedin.com/in/parthoshaon
+<br /> Kanta Bhattacharjee
+<br /> kanto.uv@outlook.com
+<br /> https://www.linkedin.com/in/kanta-bhattacharjee/
 
+<br /> Partho Sarothi Roy 
+<br /> parthoshaon@gmail.com
+<br /> https://www.linkedin.com/in/parthoshaon
 
-Name: PROTIK ACHARJAY
-<br />Student ID: 20-42715-1
-<br />Email: protik7777777@gmail.com
-<br />Linkedin: https://www.linkedin.com/in/protik-acharjay-1750a31a6?originalSubdomain=bd
+<br /> Protik Acharjay
+<br /> protik7777777@gmail.com
+<br /> https://www.linkedin.com/in/protik-acharjay-1750a31a6?originalSubdomain=bd
 
-
-Name: SAGAR CHANDRA MODOK
-<br />Student ID: 20-42749-1
-<br />Email: sagar01777034891@gmail.com
-<br />==================Thank You=================
+<br /> Sagar Chandra Modok
+<br /> sagar01777034891@gmail.com
